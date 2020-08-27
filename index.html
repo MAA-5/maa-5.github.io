@@ -7,24 +7,26 @@
     <a-scene>
 		<a-assets>
 			<a-asset-item id="galleryModel" src="models/scene.gltf"></a-asset-item>
+			<a-asset-item id="navMesh" src="models/navmesh.gltf"></a-asset-item>
+			
 			
 		</a-assets>
-		<a-entity id="rig" rotation="0 60 0" position="12 -0.3 2"
-			movement-controls="speed: 0.03">
+		<a-entity gltf-model="#navMesh" nav-mesh></a-entity>
+		<a-entity id="rig" movement-controls="constrainToNavMesh: true; speed: 0.03" rotation="0 60 0" position="12 0.3 2"
+			
+			>
 		<a-camera = "active: true"
 			look-controls
-			wasd-controls
-			
-			near="0.01"
-			>
+						
+						>
 			</a-camera>
 			<a-entity laser-controls="hand: right"></a-entity>
 			</a-entity>
-		<a-entity gltf-model="#galleryModel" position="0 0 0" scale="0.001 0.001 0.001" animation-mixer="clip: *;loop: repeat;"></a-entity>
+		<a-entity gltf-model="#galleryModel" position="0 0 0" scale="0.001 0.001 0.001" animation-mixer="clip: *;loop: repeat;"></a-entity> -->
 		
+             
 		<!-- <a-entity laser-controls="hand: right"></a-entity>	-->	
 		<!-- <a-obj-model src="#galleryModel" mtl="#gallerymtl"></a-obj-model> -->
-
 		
     </a-scene>
   </body>
