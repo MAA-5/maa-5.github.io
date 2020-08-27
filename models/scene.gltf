@@ -29050,7 +29050,7 @@
       "uri": "textures/Material_3993_baseColor.jpeg"
     },
     {
-      "uri": "textures/jake_manua_bake_baseColor.jpeg"
+      "uri": "textures/11-wishes.jpg"
     },
     {
       "uri": "textures/propinquity_early_manual_bake_baseColor.jpeg"
@@ -29143,7 +29143,7 @@
       "uri": "textures/butterfly-baked_emissive.jpg"
     },
     {
-      "uri": "textures/london_eye_manual_bake_baseColor.jpeg"
+      "uri": "textures/5_stairways-to-Hikosan.jpg"
     },
     {
       "uri": "textures/boat_manual_bake_baseColor.jpeg"
@@ -29859,7 +29859,7 @@
       "extensions": {
         "KHR_materials_unlit": {}
       },
-      "name": "jake_manua_bake",
+      "name": "11-wishes",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
           1,
