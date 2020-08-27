@@ -2,9 +2,10 @@
   <head>
     <script src="aframe.min.js"></script>
 	<script src="aframe-extras.min.js"></script>
+	<script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene inspector-plugin-recast="serviceURL: http://localhost:3000;">
 		<a-assets>
 			<a-asset-item id="galleryModel" src="models/scene.gltf"></a-asset-item>
 			<a-asset-item id="navMesh" src="models/navmesh.gltf"></a-asset-item>
@@ -12,22 +13,20 @@
 			
 		</a-assets>
 		<a-entity gltf-model="#navMesh" nav-mesh></a-entity>
-		<a-entity id="rig" movement-controls="constrainToNavMesh: true; speed: 0.05" rotation="0 60 0" position="12 0.3 1.6"
+		<a-entity id="rig" position="12 0.3 0.0" rotation="0 60 0"	movement-controls="constrainToNavMesh: true; speed: 0.1"	
 			
 			>
 		<a-camera = "active: true"
-			look-controls
-						
-						>
+			position="0 1.4 0"
+			wasd-controls-enabled="false"
+							>
+						 
 			</a-camera>
 			<a-entity laser-controls="hand: right"></a-entity>
-			</a-entity>
+		</a-entity>
 		<a-entity gltf-model="#galleryModel" position="0 0 0" scale="0.001 0.001 0.001" animation-mixer="clip: *;loop: repeat;"></a-entity> -->
-		
-             
-		<!-- <a-entity laser-controls="hand: right"></a-entity>	-->	
-		<!-- <a-obj-model src="#galleryModel" mtl="#gallerymtl"></a-obj-model> -->
-		
+		     
+				
     </a-scene>
   </body>
 </html>
