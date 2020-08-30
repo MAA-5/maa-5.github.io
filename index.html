@@ -2,10 +2,10 @@
   <head>
     <script src="aframe.min.js"></script>
 	<script src="aframe-extras.min.js"></script>
-	<script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+	
   </head>
   <body>
-    <a-scene inspector-plugin-recast="serviceURL: http://localhost:3000;">
+    <a-scene renderer="colorManagement: true">
 		<a-assets>
 			<a-asset-item id="galleryModel" src="models/scene.gltf"></a-asset-item>
 			<a-asset-item id="navMesh" src="models/navmesh.gltf"></a-asset-item>

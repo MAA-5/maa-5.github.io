@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src="aframe.min.js"></script>
+	<script src="aframe-extras.min.js"></script>
+	<script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+  </head>
+  <body>
+    <a-scene renderer="colorManagement: true">
+		<a-assets>
+			<a-asset-item id="galleryModel" src="modelstmp/scene.gltf"></a-asset-item>
+			<a-asset-item id="navMesh" src="models/navmesh.gltf"></a-asset-item>
+			
+			
+		</a-assets>
+		<!-- <a-entity gltf-model="#navMesh" nav-mesh></a-entity> -->
+		<a-entity id="rig" position="12 0.3 0.0" rotation="0 60 0"	movement-controls="constrainToNavMesh: true; speed: 0.1"	
+			
+			>
+			<a-sky id="skyl" src="PAN.jpg"></a-sky>
+		<a-camera = "active: true"
+			position="0 1.4 0"
+			wasd-controls-enabled="false"
+							>
+						 
+			</a-camera>
+			<a-entity laser-controls="hand: right"></a-entity>
+		</a-entity>
+		<a-entity gltf-model="#galleryModel" position="0 0 0" animation-mixer="clip: *;loop: repeat;"></a-entity> -->
+		     
+				
+    </a-scene>
+  </body>
+</html>
