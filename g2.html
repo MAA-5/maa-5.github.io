@@ -5,7 +5,7 @@
 	<script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
   </head>
   <body>
-    <a-scene renderer="colorManagement: true">
+    <a-scene renderer="precision: mediump; antialias: false; alpha: true; logarithmicDepthBuffer: true; colorManagement: true;" >
 		<a-assets>
 			<a-asset-item id="galleryModel" src="modelstmp/scene.gltf"></a-asset-item>
 			<a-asset-item id="navMesh" src="models/navmesh.gltf"></a-asset-item>
