@@ -16,8 +16,10 @@
 	  var movep = "descriptions/";
 	  var res = movep.concat(this.data.page);
       this.el.addEventListener('click', (e) => {
-		
-        window.open(res);
+		if(AFRAME.utils.device.checkHeadsetConnected () === false)
+		{
+			window.open(res);
+		}
       })
     }
   });
@@ -28,31 +30,33 @@
 			<a-asset-item id="galleryModel" src="modelstmp/scene.gltf"></a-asset-item>
 			<a-asset-item id="navMesh" src="modelstmp/navmesh.gltf"></a-asset-item>
 			<a-asset-item id="frame1" src="modelstmp/frame1.gltf"></a-asset-item>
-			
-			
+			<img id="sky" src="PAN.jpg">
 		</a-assets>
 		<!-- <a-entity gltf-model="#navMesh" nav-mesh></a-entity> -->
-		<a-sky class="not-clickable" id="skyl" src="preview3000.jpg"></a-sky>
+		<a-sky class="not-clickable" src="#sky" rotation="0 100 0"></a-sky>
 		<a-entity class="not-clickable" gltf-model="#navMesh" nav-mesh visible="false"></a-entity>
 		<a-entity class="clickable" gltf-model="#frame1" foo="page: p1.html"
-			 event-set__mouseenter="position: -0.1 0 0"			 
+			 event-set__mouseenter="position: -0.05 0 0"			 
              event-set__mouseleave="position: 0 0 0">
 			 </a-entity>
-		<a-entity id="rig" position="12 0.3 0.0" rotation="0 60 0"	movement-controls="constrainToNavMesh: true; speed: 0.1">
+		<a-entity id="rig" position="9.9 0.3 2.4" rotation="0 90 0"	movement-controls="constrainToNavMesh: true; speed: 0.1">
 			<a-camera = "active: true"
 				position="0 1.4 0"
 				wasd-controls-enabled="false"
 							>
 			</a-camera>
-			<a-entity laser-controls="hand: right"></a-entity>
+			<a-entity laser-controls="hand: right; far: 2"></a-entity> 
+			<a-entity oculus-touch-controls="hand: left"></a-entity>
+			<!-- <a-entity oculus-touch-controls="hand: left"></a-entity>
+			<a-entity oculus-touch-controls="hand: right"></a-entity> -->
 		</a-entity>
 		<a-entity class="not-clickable" gltf-model="#galleryModel" position="0 0 0"></a-entity>
 		
-		<a-entity htmlembed position="0 2 -5">
+		<!-- <a-entity htmlembed position="0 2 -5">
 			<h1>An Example</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			<img src="modelstmp/textures/5_stairways-to-Hikosan.jpg" alt="image">
-		</a-entity>
+		</a-entity> -->
 		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="11.572 2.815 5.24088" rotation="-6.000000000000001 180 0"></a-entity>
 		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="8.28 2.82199 5.2174" rotation="-6	180 0"></a-entity>
 		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="2.63 2.82199 5.2174" rotation="-6	180 0"></a-entity>
