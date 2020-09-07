@@ -16,7 +16,7 @@
 	  var movep = "descriptions/";
 	  var res = movep.concat(this.data.page);
       this.el.addEventListener('click', (e) => {
-		if(AFRAME.utils.device.checkHeadsetConnected () === false)
+		if(AFRAME.utils.device.checkHeadsetConnected () === false || AFRAME.utils.device.isMobile () === true)
 		{
 			window.open(res);
 		}
