@@ -1,9 +1,12 @@
 <html>
   <head>
+	<meta charset="UTF-8">
     <script src="aframe.min.js"></script>
 	<script src="aframe-extras.min.js"></script>
 	<script src="aframe-gltf-part-component.min.js"></script>
 	<script src="aframe-event-set-component.min.js"></script>
+	<script src="aframe-particle-system-component.min.js"></script>
+
 	<script src="http://supereggbert.github.io/aframe-htmlembed-component/dist/build.js"></script> 
   </head>
   <body>
@@ -33,8 +36,8 @@
 			<img id="sky" src="PAN.jpg">
 		</a-assets>
 		<!-- <a-entity gltf-model="#navMesh" nav-mesh></a-entity> -->
-		<a-sky class="not-clickable" src="#sky" rotation="0 100 0"></a-sky>
-		<a-entity class="not-clickable" gltf-model="#navMesh" nav-mesh visible="false"></a-entity>
+		<a-sky class="not-clickable" src="#sky" rotation="0 100 0" static-body></a-sky>
+		<a-entity class="not-clickable" gltf-model="#navMesh" nav-mesh visible="false" static-body></a-entity>
 		<a-entity class="clickable" gltf-model="#frame1" foo="page: p1.html"
 			 event-set__mouseenter="position: -0.05 0 0"			 
              event-set__mouseleave="position: 0 0 0">
@@ -50,17 +53,18 @@
 			<!-- <a-entity oculus-touch-controls="hand: left"></a-entity>
 			<a-entity oculus-touch-controls="hand: right"></a-entity> -->
 		</a-entity>
-		<a-entity class="not-clickable" gltf-model="#galleryModel" position="0 0 0"></a-entity>
-		
+		<a-entity class="not-clickable" gltf-model="#galleryModel" position="0 0 0" static-body></a-entity>
+		<!-- <a-entity position="0 2.25 -15" particle-system="preset: dust"></a-entity> -->
+		<a-entity class="not-clickable" position="5.616 5.51308 0" particle-system="preset: snow; maxAge: 20; positionSpread: 2 2 2; rotationAngle: 3.14; rotationAngleSpread: 1; accelerationValue: 0 0 0; accelerationSpread: 0.06 0 0.06; velocityValue: 0 0.8 0; velocitySpread: 0.2 0.15 0.2; dragValue: 0.32; dragSpread: 0.15; color: #dcdcdc, #101010; size: 0.5; duration: NaN; particleCount: 10; texture: modelstmp/textures/leaf.png; randomise: true; opacity: 1; blending: 1"></a-entity>
 		<!-- <a-entity htmlembed position="0 2 -5">
 			<h1>An Example</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			<img src="modelstmp/textures/5_stairways-to-Hikosan.jpg" alt="image">
 		</a-entity> -->
-		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="11.572 2.815 5.24088" rotation="-6.000000000000001 180 0"></a-entity>
-		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="8.28 2.82199 5.2174" rotation="-6	180 0"></a-entity>
-		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="2.63 2.82199 5.2174" rotation="-6	180 0"></a-entity>
-		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="-0.34 2.82199 5.2174" rotation="-6	180 0"></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="11.572 2.815 5.24088" rotation="-6.000000000000001 180 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="8.28 2.82199 5.2174" rotation="-6	180 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="2.63 2.82199 5.2174" rotation="-6	180 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="-0.34 2.82199 5.2174" rotation="-6 180 0" static-body></a-entity>
 
 		<a-entity light="type: ambient; color: #BBB"></a-entity>
 		<a-entity light="type: directional; color: #EEE; intensity: 1.0" position="-1 1 0"></a-entity>
