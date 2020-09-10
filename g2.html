@@ -1,13 +1,12 @@
 <html>
   <head>
 	<meta charset="UTF-8">
-    <script src="aframe.min.js"></script>
-	<script src="aframe-extras.min.js"></script>
-	<script src="aframe-gltf-part-component.min.js"></script>
-	<script src="aframe-event-set-component.min.js"></script>
-	<script src="aframe-particle-system-component.min.js"></script>
-
-	<script src="http://supereggbert.github.io/aframe-htmlembed-component/dist/build.js"></script> 
+    <script src="./lib/aframe.min.js"></script>
+	<script src="lib/aframe-extras.min.js"></script>
+	<script src="lib/aframe-gltf-part-component.min.js"></script>
+	<script src="lib/aframe-event-set-component.min.js"></script>
+	<script src="lib/aframe-particle-system-component.min.js"></script>
+	<script src="lib/aframe-htmlembed-component.js"></script> 
   </head>
   <body>
   <script>
@@ -30,9 +29,9 @@
 </script>
     <a-scene renderer="antialias: true; alpha: true; colorManagement: true" raycaster="objects: .clickable" cursor="rayOrigin:mouse">
 		<a-assets>
-			<a-asset-item id="galleryModel" src="modelstmp/scene2.gltf"></a-asset-item>
-			<a-asset-item id="navMesh" src="modelstmp/navmesh.gltf"></a-asset-item>
-			<a-asset-item id="frame1" src="modelstmp/frame1.gltf"></a-asset-item>
+			<a-asset-item id="galleryModel" src="models/scene2.gltf"></a-asset-item>
+			<a-asset-item id="navMesh" src="models/navmesh.gltf"></a-asset-item>
+			<a-asset-item id="frame1" src="models/frame1.gltf"></a-asset-item>
 			<img id="sky" src="PAN.jpg">
 		</a-assets>
 		<!-- <a-entity gltf-model="#navMesh" nav-mesh></a-entity> -->
@@ -55,7 +54,7 @@
 		</a-entity>
 		<a-entity class="not-clickable" gltf-model="#galleryModel" position="0 0 0" static-body></a-entity>
 		<!-- <a-entity position="0 2.25 -15" particle-system="preset: dust"></a-entity> -->
-		<a-entity class="not-clickable" position="5.616 5.51308 0" particle-system="preset: snow; maxAge: 20; positionSpread: 2 2 2; rotationAngle: 3.14; rotationAngleSpread: 1; accelerationValue: 0 0 0; accelerationSpread: 0.06 0 0.06; velocityValue: 0 0.8 0; velocitySpread: 0.2 0.15 0.2; dragValue: 0.32; dragSpread: 0.15; color: #dcdcdc, #101010; size: 0.5; duration: NaN; particleCount: 10; texture: modelstmp/textures/leaf.png; randomise: true; opacity: 1; blending: 1"></a-entity>
+		<a-entity class="not-clickable" position="5.616 5.51308 0" particle-system="preset: snow; maxAge: 20; positionSpread: 2 2 2; rotationAngle: 3.14; rotationAngleSpread: 1; accelerationValue: 0 0 0; accelerationSpread: 0.06 0 0.06; velocityValue: 0 0.8 0; velocitySpread: 0.2 0.15 0.2; dragValue: 0.32; dragSpread: 0.15; color: #dcdcdc, #101010; size: 0.5; duration: NaN; particleCount: 10; texture: models/textures/leaf.png; randomise: true; opacity: 1; blending: 1"></a-entity>
 		<!-- <a-entity htmlembed position="0 2 -5">
 			<h1>An Example</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
