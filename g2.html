@@ -8,6 +8,7 @@
 	<script src="lib/aframe-particle-system-component.min.js"></script>
 	<script src="lib/aframe-htmlembed-component.js"></script> 
   </head>
+  <title>Loading, please wait</title>
   <body>
   <script>
   AFRAME.registerComponent('foo', {
@@ -27,7 +28,7 @@
   });
 
 </script>
-    <a-scene renderer="antialias: true; alpha: true; colorManagement: true" raycaster="objects: .clickable" cursor="rayOrigin:mouse">
+    <a-scene loading-screen="dotsColor: red; backgroundColor: blue" renderer="antialias: true; alpha: true; colorManagement: true" raycaster="objects: .clickable" cursor="rayOrigin:mouse">
 		<a-assets>
 			<a-asset-item id="galleryModel" src="models/scene2.gltf"></a-asset-item>
 			<a-asset-item id="navMesh" src="models/navmesh.gltf"></a-asset-item>
