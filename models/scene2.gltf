@@ -305,15 +305,15 @@
         {
             "name" : "Camera",
             "rotation" : [
-                0.3991314470767975,
-                -0.587250828742981,
-                0.3867407441139221,
-                0.588440477848053
+                0.5867680311203003,
+                -0.375447541475296,
+                0.3525695502758026,
+                0.6248496770858765
             ],
             "translation" : [
-                -6.678518772125244,
-                2.918795108795166,
-                0.11206096410751343
+                -6.652914524078369,
+                2.442216396331787,
+                7.353075981140137
             ]
         },
         {
@@ -326,12 +326,12 @@
                 -3.0908619663705394e-08
             ],
             "scale" : [
-                0.28707581758499146,
+                0.18199999630451202,
                 1,
                 1
             ],
             "translation" : [
-                12.559377670288086,
+                12.559399604797363,
                 2.464702606201172,
                 0.3313520550727844
             ]
@@ -346,12 +346,12 @@
                 -3.0908619663705394e-08
             ],
             "scale" : [
-                0.28707581758499146,
+                0.18199999630451202,
                 1,
                 1
             ],
             "translation" : [
-                -4.33919620513916,
+                -4.339200019836426,
                 2.0707147121429443,
                 -5.957276344299316
             ]
@@ -366,12 +366,12 @@
                 0.7071067690849304
             ],
             "scale" : [
-                0.2870759963989258,
+                0.18199999630451202,
                 1,
                 1
             ],
             "translation" : [
-                -4.0193562507629395,
+                -3.9977972507476807,
                 2.0707147121429443,
                 6.33160400390625
             ]
@@ -1428,132 +1428,132 @@
         {
             "mimeType" : "image/jpeg",
             "name" : "Material_733_baseColor",
-            "uri" : "Material_733_baseColor.jpg"
+            "uri" : "textures/Material_733_baseColor.jpg"
         },
         {
             "mimeType" : "image/png",
             "name" : "Material_727_normal",
-            "uri" : "Material_727_normal.png"
+            "uri" : "textures/Material_727_normal.png"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "Material_727_baseColor",
-            "uri" : "Material_727_baseColor.jpg"
+            "uri" : "textures/Material_727_baseColor.jpg"
         },
         {
             "mimeType" : "image/png",
             "name" : "grass__0_metallicRoughness",
-            "uri" : "grass__0_metallicRoughness.png"
+            "uri" : "textures/grass__0_metallicRoughness.png"
         },
         {
             "mimeType" : "image/png",
             "name" : "grass__0_baseColor",
-            "uri" : "grass__0_baseColor.png"
+            "uri" : "textures/grass__0_baseColor.png"
         },
         {
             "mimeType" : "image/png",
             "name" : "Material_724_normal",
-            "uri" : "Material_724_normal.png"
+            "uri" : "textures/Material_724_normal.png"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "Material_724_baseColor",
-            "uri" : "Material_724_baseColor.jpg"
+            "uri" : "textures/Material_724_baseColor.jpg"
         },
         {
             "mimeType" : "image/png",
             "name" : "Material_726_normal",
-            "uri" : "Material_726_normal.png"
+            "uri" : "textures/Material_726_normal.png"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "Material_726_baseColor",
-            "uri" : "Material_726_baseColor.jpg"
+            "uri" : "textures/Material_726_baseColor.jpg"
         },
         {
             "mimeType" : "image/png",
             "name" : "elm_leaf_normal",
-            "uri" : "elm_leaf_normal.png"
+            "uri" : "textures/elm_leaf_normal.png"
         },
         {
             "mimeType" : "image/png",
             "name" : "elm_leaf_baseColor",
-            "uri" : "elm_leaf_baseColor.png"
+            "uri" : "textures/elm_leaf_baseColor.png"
         },
         {
             "mimeType" : "image/png",
             "name" : "Material_732_normal",
-            "uri" : "Material_732_normal.png"
+            "uri" : "textures/Material_732_normal.png"
         },
         {
             "mimeType" : "image/png",
             "name" : "Material_732_metallicRoughness",
-            "uri" : "Material_732_metallicRoughness.png"
+            "uri" : "textures/Material_732_metallicRoughness.png"
         },
         {
             "mimeType" : "image/png",
             "name" : "Material_732_baseColor",
-            "uri" : "Material_732_baseColor.png"
+            "uri" : "textures/Material_732_baseColor.png"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "Material_723_baseColor",
-            "uri" : "Material_723_baseColor.jpg"
+            "uri" : "textures/Material_723_baseColor.jpg"
         },
         {
             "mimeType" : "image/png",
-            "name" : "Maa5_2",
-            "uri" : "Maa5_2.png"
+            "name" : "MAA5-logo_1024x1024",
+            "uri" : "textures/MAA5-logo_1024x1024.png"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "1s",
-            "uri" : "1s.jpg"
+            "uri" : "textures/1s.jpg"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "3s",
-            "uri" : "3s.jpg"
+            "uri" : "textures/3s.jpg"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "10s",
-            "uri" : "10s.jpg"
+            "uri" : "textures/10s.jpg"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "4s",
-            "uri" : "4s.jpg"
+            "uri" : "textures/4s.jpg"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "6s",
-            "uri" : "6s.jpg"
+            "uri" : "textures/6s.jpg"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "7s",
-            "uri" : "7s.jpg"
+            "uri" : "textures/7s.jpg"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "13s",
-            "uri" : "13s.jpg"
+            "uri" : "textures/13s.jpg"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "5s",
-            "uri" : "5s.jpg"
+            "uri" : "textures/5s.jpg"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "14s",
-            "uri" : "14s.jpg"
+            "uri" : "textures/14s.jpg"
         },
         {
             "mimeType" : "image/jpeg",
             "name" : "12s",
-            "uri" : "12s.jpg"
+            "uri" : "textures/12s.jpg"
         }
     ],
     "accessors" : [
@@ -2001,12 +2001,12 @@
             "count" : 4,
             "max" : [
                 1.0033032894134521,
-                -0.31215426325798035,
+                -0.3253892958164215,
                 0.9651098251342773
             ],
             "min" : [
                 -0.9966966509819031,
-                -0.31215426325798035,
+                -0.3253892958164215,
                 -1.0348901748657227
             ],
             "type" : "VEC3"
