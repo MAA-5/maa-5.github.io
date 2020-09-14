@@ -50,6 +50,10 @@ body {
   padding: 10px;
 }
 
+p {
+ font-weight: 400;
+}
+
 h2 {
   color: #0d7d99e7;
   font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
