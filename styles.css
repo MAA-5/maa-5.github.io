@@ -25,10 +25,12 @@ a:hover {
 body {
   font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
     font-size: 12px;
+    color: #333333;
     background-color: #eeeeee;
 }
 
 .jumbotron {
+  background-color: #eeeeee !important;
   padding-top: 1.25em;
   padding-bottom: 1.25em;
 }
@@ -46,10 +48,6 @@ body {
   background-color: #ffffff;
 }
 
-h1 {
-  color: #333333;
-}
-
 h2 {
   color: #0d7d99e7;
   font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
@@ -63,13 +61,8 @@ h3 {
   font-weight: 400;
 }
 
-p {
-  color: #333333;
-}
-
 .small{
   font-size: 1em;
-  color: #333333;
   margin-top: 0.875em;
 }
 /* 
