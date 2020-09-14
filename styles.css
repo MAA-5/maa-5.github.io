@@ -24,9 +24,6 @@ a:hover {
 
 body {
   font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
-  /*line-height: normal;
-  text-shadow: none;
-  box-shadow: none;*/
 }
 
 .jumbotron {
@@ -35,7 +32,7 @@ body {
 }
 
 #gallery-image {
-    width: 100%;
+    display: flex;
     margin: auto;
 }
 
@@ -95,7 +92,6 @@ p {
 
 .team-footer {
   background-color: #eeeeee;
-  padding: 30px;
 }
 
 
