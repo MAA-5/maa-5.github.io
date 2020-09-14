@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MAA5 | 3d Virtual Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Adding Bootstrap quicly and free: https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
+
+    <!-- Bootsrap needs this: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+     crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+     crossorigin="anonymous"></script>
+
+
+    <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/css/mdb.min.css">
+
+</head>
+
+<body>
+
+    <section class="jumbotron text-center">
+        <img src="images/MAA5-logo_new.svg" alt="MAA5 3d Virtual Gallery Logo" width="300px">
+        <a href="g2.html" target="_blank">
+            <div class="view overlay zoom" role="link">
+                <img id="gallery-image" src="images/gallery1_1200.jpg" class="img-fluid gallery-enter"
+                    alt="MAA5 3d Virtual Gallery">
+                <div class="mask flex-center" role="none">
+                    <p class="white-text">Enter the Gallery<br>(Loading takes a while... please wait)</p>
+                </div>
+            </div>
+        </a>
+    </section>
+
+
+    <section class="fluid-container">
+        <!-- PHOTOGRAPHER-->
+        <div class="row">
+            <div class="col-sm exhibition-text">
+                <h1>Travelling in Tagawa</h1>
+                <h2>Photography Exhibition by Anne Virta</h2>
+                <p><b>Tagawa (Tagawa-shi)</b> city located in Fukuoka Prefecture in Kyushu Island, Japan. Tagawa is
+                    surrounded by mountains,
+                    Mount Hiko in the south. <b>Hikosan Shrine,</b> Fukuoka’s only Jingu shrine, the most prestigious
+                    Shinto
+                    shrine, nestled on sacred mountain Mount Hiko.
+                    Since ancient times people have visited the shrine to worship the god of safety in farming and
+                    mining.
+                </p>
+                <p>In year 2009 <b>“Peeks into the Dancing Moominvalley”</b> (<a
+                        href="http://dancingmoominvalley.blogspot.com/2009/11/kurkistuksia-tanssivaan-muumilaaksoon.html"
+                        target="_blank">link</a> to the Dancing Moominvalley blog) took part to a happening introducing
+                    Tove Jansson´s work and Finland in <b>Fukuoka Asian Art Museum</b>. I was photographing the working
+                    process and
+                    the show for children in Fukuoka Asian Art Museum.</p>
+                <p>I travelled with the dancers, and the producer and the composer of the music of the Dancing
+                    Moominvalley.
+                    We had an honour to stay in
+                    a Japanese family in Tagawa. It was awesome since to travelling to Japan has been my dream since I
+                    was
+                    twelve!
+                    So we climbed up the stairs to the Shinto Shrine in the holy Mount Hiko and I was touched by the the
+                    forest and the mountain with
+                    magnificent scenes and its ancient places and builings.</p>
+            </div>
+        <!-- Gallery Carousel -->
+        <div class="col-sm">
+        <div id="carouselFade" role="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner" role="carousel">
+                 <ol class="carousel-indicators">
+                    <li data-target="#carouselFade" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselFade" data-slide-to="1"></li>
+                    <li data-target="#carouselFade" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-caption d-none d-md-block text-center" role="carousel">
+                    <h4>"Travelling in Tagawa"<br>
+                        Anne Virta </h4>
+                </div>
+                <div class="carousel-item active" role="carousel">
+                    <img class="d-block w-100" src="images/1_Tagawa_2009_600.jpg" alt="Tagawa">
+                </div>
+                <div class="carousel-item" role="carousel">
+                    <img class="d-block w-100" src="images/4_statue2_600.jpg" alt="A Statue">
+                </div>
+                <div class="carousel-item" role="carousel">
+                    <img class="d-block w-100" src="images/9_the-Hikosan-shrine_600.jpg" alt="Hikosan Shrine">
+                </div>
+                <a class="carousel-control-prev" href="#carouselFade" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+                                                                  
+    <!-- COPYRIGHTS -->
+    <section class="small ow"><p>&copy; 3D Model: Joku Jokunen. Gallery Landscape Image: Marko O-A.
+            Photos/Travelling in Tagawa: Anne V.</p>
+    </section>
+
+    <!-- TEAM -->
+    <section class="footer-wrapper">
+        <div class="footer-team" role="grid">
+            <div class="row">
+                <h2>Team MAA5</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <p><h5>Anne V.</h5> worked as <i>a Web Designer / 3D Specialist</i> in this project. She created
+                        the MAA5 logo and the landing page in addition to various other tasks. An outstanding positive
+                        personality with a can-do attitude makes her a great team member and easy to work with. </p>
+                </div>
+                <div class="col-sm-3">
+                    <p><h5>Anni A.</h5> worked as <i>a Web Designer / Web Developer</i> in this project. The visual
+                        appearance of the MAA5 landing page is influenced by Anni’s ideas, who also created a carousel
+                        (slideshow) on the same page. As a person, Anni is creative and a supportive team player. <br>
+                    <a href="https://github.com/A-Aapro">Anni's GitHub</a></p>
+                </div>
+                <div class="col-sm-3">
+                    <p><h5>Marko O-A.</h5> worked as <i>a VR developer / Technical Specialist</i> in this project.
+                        Features like implemented interactivity, movement and visual effects, and compatibility with
+                        Oculus devices are executed by Marko. A genuine interest in VR and a hands-on attitude make
+                        Marko an invaluable project member. ousel
+                        (slideshow) on the same page. As a person, Anni is creative and a supportive team player. <br>
+                    <a href="https://github.com/moflac">Marko's GitHub</a></p>
+                </div>
+                <div class="col-sm-3">
+                    <p><h5>Ville P.</h5> worked as <i>a Project Coordinator</i> in this project. Time management and
+                        communication related tasks were on his responsibility list. By nature, Ville is organised and
+                        he tries to support the other team members and make sure that the project timeline is met. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

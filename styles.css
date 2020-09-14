@@ -1,0 +1,99 @@
+/*
+ * Globals
+ */
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #666666;
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+  font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    color: #333333;
+}
+
+.jumbotron {
+  background-color: #eeeeee !important;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+}
+
+#gallery-image {
+  width: 100%;
+  height: auto;
+}
+
+.white-text{
+  font-size: 30px;
+}
+
+.fluid-container, .small {
+  margin: 20px;
+  padding: 10px;
+}
+
+h2 {
+  color: #0d7d99e7;
+  font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  padding-top: 0.5em;
+}
+
+h3 {
+  color: #0d7d99e7;
+  font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+}
+
+.small{
+  font-size: 1em;
+}
+/* 
+* Carousel
+*/
+#carouselFade {
+  display: inline-block;
+  margin: auto;
+}
+
+.carousel-inner {
+  margin: auto;
+  max-width: 600px;
+  max-height: 500px;
+}
+
+.carousel-caption {
+  color: #ffffff;
+}
+
+/* 
+* Footer
+*/
+
+.footer-wrapper {
+ background-color: #eeeeee;
+}
+
+.footer-team {
+  margin: 20px;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+
