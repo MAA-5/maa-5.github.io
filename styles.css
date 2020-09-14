@@ -25,10 +25,10 @@ a:hover {
 body {
   font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
   font-size: 12px;
+  background-color: #eeeeee;
 }
 
 .jumbotron {
-  background-color: #eeeeee;
   padding-top: 1.25em;
   padding-bottom: 1.25em;
 }
