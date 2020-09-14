@@ -63,16 +63,10 @@ p {
   color: #333333;
   margin-top: 0.875em;
 }
-
-.photographer {
-   margin: auto;
-   height: 800px;
-}
-
 /* 
 * Carousel
 */
-#carouselFade, .exhibition-text {
+#carouselFade {
   display: inline-block;
 }
 
