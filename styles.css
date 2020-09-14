@@ -1,0 +1,99 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #666666;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+
+body {
+ /* display: -ms-flexbox;
+  display: flex; */
+  color: #000000;
+  font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+  line-height: normal;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+h1 {
+  color: #333333;
+  font-size: 2em;
+}
+
+h2 {
+  color: #0d7d99e7;
+  font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-size: 1.875em;
+  padding-top: 0.5em;
+}
+
+h3 {
+  color: #0d7d99e7;
+  font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+
+}
+
+p {
+  font-size: 1.25em;
+  color: #333333;
+}
+
+.small{
+  font-size: 1em;
+  color: #333333;
+  margin-top: 0.875em;
+}
+
+
+.team {
+  /* background-color: #eeeeee; */
+  width: 100%;
+
+}
+
+
+/* 
+* Carousel
+*/
+#carouselFade {
+  display: inline-block;
+}
+
+.carousel-inner {
+  margin: auto;
+  max-width: 600px;
+  max-height: 338px;
+}
+
+.carousel-caption {
+  color: #ffffff;
+}
+.jumbotron {
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;;
+}
+
+/*
+ * Footer
+ */
+.footer {
+  color: #666666;
+}
