@@ -46,7 +46,8 @@ body {
 }
 
 .fluid-container, .small {
-  margin: 10vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
   padding: 10px;
 }
 
@@ -98,7 +99,8 @@ h3 {
 }
 
 .footer-team {
-  margin: 10vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
   padding: 10px;
   padding-bottom: 50px;
 }
