@@ -20,9 +20,6 @@ body {
 }
 
 body {
- /* display: -ms-flexbox;
-  display: flex; */
-  color: #000000;
   font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
   line-height: normal;
   text-shadow: none;
@@ -89,9 +86,9 @@ p {
 */
 
 .team-footer {
-  background-color: #eeeeee;
-  width: 100%;
-
+  background-color: rgb(212, 212, 212);
+  margin: 30px;
+  padding: 10px;
 }
 
 
