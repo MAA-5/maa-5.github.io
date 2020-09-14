@@ -4,14 +4,12 @@
   <title>MAA5 | 3d Virtual Gallery</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- Adding Bootstrap quicly and free: https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
 <!-- Optional/own JavaScript here -->
 <!-- Bootsrap needs this: jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -26,13 +24,20 @@
 
           <!-- Custom styles for this template -->
           <link href="styles.css" rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet"> 
+          <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="lib/css/mdb.min.css">
 </head>
 <body>
 <section class="jumbotron text-center">
   <div><img alt="MAA5 3d Virtual Gallery Logo" src="images/MAA5-logo_new.svg" width="300px"></div>
-
-<a href="g2.html" target="_blank"><img id="gallery-image" alt="MAA5 3d Virtual Gallery" src="images/gallery1_1200.jpg"></a>
+     <a href="g2.html" target="_blank">
+          <div class="view overlay zoom" role="link">
+            <img id="gallery-image" src="images/gallery1_1200.jpg" class="img-fluid gallery-enter" alt="MAA5 3d Virtual Gallery"
+            <div class="mask flex-center" role="none">
+              <p class="white-text">Enter the Gallery</p>
+            </div>
+          </div>
+        </a>
 </section>
   
 <section class="container-fluid">
