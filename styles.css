@@ -24,7 +24,7 @@ a:hover {
 
 body {
   font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .jumbotron {
@@ -65,13 +65,15 @@ p {
 }
 
 .photographer{
-  height: 90vh;
+   display: flex;
+   flex-wrap: wrap;
+   height: 90vh;
 }
 
 /* 
 * Carousel
 */
-#carouselFade {
+#carouselFade, .exhibition-text {
   display: inline-block;
 }
 
