@@ -91,7 +91,7 @@ p {
 * Footer
 */
 
-.footer-wrapper {
+.footer-wrapper, .jumbotron {
  background-color: #eeeeee;
 }
 
