@@ -99,15 +99,13 @@ h3 {
 */
 
 .footer-wrapper {
- background-color: #eeeeee;
-}
-
-.footer-team {
+  background-color: #eeeeee;
   margin-left: 8vw;
   margin-right: 8vw;
   padding-top: 30px;
   padding: 5px;
   padding-bottom: 50px;
 }
+
 
 
