@@ -17,7 +17,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #fff;
 }
 
 body {
@@ -28,6 +27,11 @@ body {
   line-height: normal;
   text-shadow: none;
   box-shadow: none;
+}
+
+.jumbotron {
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;;
 }
 
 h1 {
@@ -63,13 +67,6 @@ p {
 }
 
 
-.team-footer {
-  background-color: #eeeeee;
-  width: 100%;
-
-}
-
-
 /* 
 * Carousel
 */
@@ -86,14 +83,15 @@ p {
 .carousel-caption {
   color: #ffffff;
 }
-.jumbotron {
-  padding-top: 1.25em;
-  padding-bottom: 1.25em;;
+
+/* 
+* Footer
+*/
+
+.team-footer {
+  background-color: #eeeeee;
+  width: 100%;
+
 }
 
-/*
- * Footer
- */
-.footer {
-  color: #666666;
-}
+
