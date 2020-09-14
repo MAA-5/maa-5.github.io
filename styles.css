@@ -45,7 +45,7 @@ body {
 }
 
 .fluid-container, .small {
-  margin: 5vw;
+  margin: 10vw;
   padding: 10px;
 }
 
@@ -97,7 +97,7 @@ h3 {
 }
 
 .footer-team {
-  margin: 5vw;
+  margin: 10vw;
   padding: 10px;
   padding-bottom: 50px;
 }
