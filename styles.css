@@ -34,6 +34,8 @@ body {
   background-color: #eeeeee !important;
   padding-top: 1.25em;
   padding-bottom: 1.25em;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 #gallery-image {
@@ -104,7 +106,9 @@ h4 {
 * Footer
 */
  .footer-wrapper {
-   background-color: #eeeeee;  
+   background-color: #eeeeee;
+   margin-left: 1vw;
+   margin-right: 1vw;
  }
  
  .footer-team {
