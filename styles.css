@@ -97,18 +97,17 @@ h3 {
 /* 
 * Footer
 */
-
-.footer-wrapper {
-  background-color: #eeeeee;
-}
-
-.footer-team {
-  margin-left: 8vw;
-  margin-right: 8vw;
-  margin-top: 30px;
-  padding: 5px;
-  padding-bottom: 50px;
-}
+ .footer-wrapper {
+   background-color: #eeeeee;  
+ }
+ 
+ .footer-team {
+   margin-left: 8vw;
+   margin-right: 8vw;
+   padding: 5px;
+   padding-bottom: 50px;
+   padding-top: 30px;
+ }
 
 
 
