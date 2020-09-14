@@ -52,20 +52,23 @@ body {
 }
 
 p {
- font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
  font-weight: 400;
  font-size: 13px;
+}
+
+h1 {
+font-size: 20px;
 }
 
 h2 {
   color: #0d7d99e7;
   font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
   font-weight: 600;
+  font-size: 18px;
 }
 
 h3 {
   color: #0d7d99e7;
-  font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
   font-weight: 400;
 }
 
