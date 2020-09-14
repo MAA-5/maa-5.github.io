@@ -62,9 +62,8 @@ h3 {
 }
 
 .small{
-  background-color: #ffffff;
   font-size: 1em;
-  margin-top: 0.875em;
+  text-align: center;
 }
 /* 
 * Carousel
