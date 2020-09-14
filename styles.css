@@ -28,6 +28,7 @@ body {
 }
 
 .jumbotron {
+  background-color: #eeeeee;
   padding-top: 1.25em;
   padding-bottom: 1.25em;
 }
@@ -35,6 +36,10 @@ body {
 #gallery-image {
   width: 100%;
   height: auto;
+}
+
+.white-text{
+  font-size: 30px;
 }
 
 h1 {
@@ -73,7 +78,7 @@ p {
 
 .carousel-inner {
   margin: auto;
-  max-width: 600px;
+  max-width: 500px;
   max-height: 400px;
 }
 
@@ -85,7 +90,7 @@ p {
 * Footer
 */
 
-.footer-wrapper, .jumbotron {
+.footer-wrapper {
  background-color: #eeeeee;
 }
 
