@@ -26,7 +26,6 @@ a:hover {
 
 body {
   font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
-  font-size: 14px;
   color: #333333;
 }
 
@@ -53,6 +52,7 @@ body {
 p {
  font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
  font-weight: 400;
+ font-size: 12px;
 }
 
 h2 {
