@@ -90,10 +90,11 @@ p {
 * Footer
 */
 
-.footer{
+.footer-wrapper {
  background-color: #eeeeee;
 }
-.team-footer {
+
+.footer-team {
   padding-left: 1%;
   padding-bottom: 5%;
 }
