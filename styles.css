@@ -2,6 +2,14 @@
  * Globals
  */
 
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
 /* Links */
 a,
 a:focus,
@@ -14,16 +22,11 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
-  line-height: normal;
+  /*line-height: normal;
   text-shadow: none;
-  box-shadow: none;
+  box-shadow: none;*/
 }
 
 .jumbotron {
