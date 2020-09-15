@@ -28,6 +28,8 @@ body {
   font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
   font-size: 13px;
   color: #333333;
+  text-shadow: none;
+  box-shadow: none;
 }
 
 .jumbotron {
