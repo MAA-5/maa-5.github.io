@@ -16,8 +16,7 @@ html {
 a,
 a:focus,
 a:hover {
-  color: #666666;
-  font-weight: 600;
+  color: #1D5851;
 }
 
 
@@ -65,7 +64,7 @@ font-size: 24px;
 }
 
 h2 {
-  color: #0d7d99e7;
+  color: #267073;
   font-weight: 600;
   font-size: 20px;
 }
