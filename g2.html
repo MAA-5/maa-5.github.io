@@ -47,7 +47,7 @@
 });
 
 </script>
-    <a-scene loading-screen="dotsColor: red; backgroundColor: blue" renderer="antialias: true; alpha: true; colorManagement: true" raycaster="objects: .clickable" cursor="rayOrigin:mouse">
+    <a-scene stats loading-screen="dotsColor: red; backgroundColor: blue" renderer="antialias: true; alpha: true; colorManagement: true" raycaster="objects: .clickable" cursor="rayOrigin:mouse">
 		<a-assets timeout="10000">
 			<a-asset-item id="galleryModel" src="models/scene2.gltf"></a-asset-item>
 			<a-asset-item id="navMesh" src="models/navmesh.gltf"></a-asset-item>
@@ -66,9 +66,9 @@
 			<a-asset-item id="frame13" src="models/frame13.gltf"></a-asset-item>
 			<a-asset-item id="frame14" src="models/frame14.gltf"></a-asset-item>
 			<a-asset-item id="frame15" src="models/frame15.gltf"></a-asset-item>
-			<audio id="wind" src="audio/wind.mp3"></audio>
-			<audio id="0904" src="audio/0904.mp3"></audio>
-			<audio id="1859" src="audio/1859.mp3"></audio>
+			<audio id="wind" src="audio/wind.mp3" preload="auto"></audio>
+			<audio id="0904" src="audio/0904.mp3" preload="auto"></audio>
+			<audio id="1859" src="audio/1859.mp3" preload="auto"></audio>
 			
 			<img id="sky" src="PAN.jpg">
 		</a-assets>
@@ -170,9 +170,9 @@
              event-set__mouseleave="position: 0 0 0">
 			 </a-entity> -->
 		
-		<a-sound src="#1859" autoplay="true" position="5.26 6.2 -0.6" loop="true" volume="0.6"></a-sound>
-		<a-sound src="#0904" autoplay="true" position="6.5 6.2 -0.6" loop="true" volume="0.6"></a-sound>
-		<a-sound src="#wind" autoplay="true" position="-9.24 2 0" loop="true" volume="0.2"></a-sound>
+		<a-sound src="#1859" autoplay="true" position="5.26 6.2 -0.6" loop="true" volume="0.6" positional="false"></a-sound>
+		<a-sound src="#0904" autoplay="true" position="6.5 6.2 -0.6" loop="true" volume="0.6" positional="false"></a-sound>
+		<a-sound src="#wind" autoplay="true" position="-9.24 2 0" loop="true"  positional="false" volume="0.2"></a-sound>
 		<!-- <a-entity tracked-controls="controller: 0; autoHide: false"></a-entity> -->
     </a-scene>
   </body>
