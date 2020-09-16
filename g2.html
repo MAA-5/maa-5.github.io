@@ -47,7 +47,7 @@
 });
 
 </script>
-    <a-scene loading-screen="dotsColor: red; backgroundColor: blue" renderer="antialias: true; alpha: true; colorManagement: true" raycaster="objects: .clickable" cursor="rayOrigin:mouse">
+    <a-scene stats loading-screen="dotsColor: red; backgroundColor: blue" renderer="antialias: true; alpha: true; colorManagement: true" raycaster="objects: .clickable" cursor="rayOrigin:mouse">
 		<a-assets timeout="10000">
 			<a-asset-item id="galleryModel" src="models/scene2.gltf"></a-asset-item>
 			<a-asset-item id="navMesh" src="models/navmesh.gltf"></a-asset-item>
@@ -72,7 +72,7 @@
 			
 			<img id="sky" src="PAN.jpg">
 		</a-assets>
-		<a-entity class="not-clickable" gltf-model="#galleryModel" position="0 0 0" static-body></a-entity>
+		<a-entity class="not-clickable" gltf-model="#galleryModel" position="0 0 0" static-body shadow="receive: true; cast: true"></a-entity>
 		<!-- <a-entity gltf-model="#navMesh" nav-mesh></a-entity> -->
 		<a-sky class="not-clickable" src="#sky" rotation="0 100 0" static-body></a-sky>
 		<a-entity class="not-clickable" gltf-model="#navMesh" nav-mesh visible="false" static-body></a-entity>
@@ -158,11 +158,12 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			<img src="modelstmp/textures/5_stairways-to-Hikosan.jpg" alt="image">
 		</a-entity> -->
-		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="11.572 2.815 5.24088" rotation="-6.000000000000001 180 0" static-body></a-entity>
-		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="8.28 2.82199 5.2174" rotation="-6	180 0" static-body></a-entity>
-		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="2.63 2.82199 5.2174" rotation="-6	180 0" static-body></a-entity>
-		<a-entity light="type: spot; castShadow: true; angle: 50.2; intensity: 0.84; penumbra: 0.25" visible="" position="-0.34 2.82199 5.2174" rotation="-6 180 0" static-body></a-entity>
-
+		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="10.0 2.815 5.24088" rotation="-6.0 180 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="1.096 2.82199 5.2174" rotation="-6 180 0"  static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="0.990 2.794 -4.726" rotation="-6	0 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="9.876 2.794 -4.726" rotation="-6 0 0" static-body></a-entity> 
+		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="1.096 2.794 10.0" rotation="-6 0 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="0.990 2.794 -9.2" rotation="-6 180 0" static-body></a-entity>
 		<a-entity light="type: ambient; color: #BBB" static-body></a-entity>
 		<a-entity light="type: directional; color: #EEE; intensity: 1.0" position="-1 1 0" static-body></a-entity>
 		<!-- <a-entity gltf-part="src: #galleryModel; part: Frame6" 
@@ -170,9 +171,9 @@
              event-set__mouseleave="position: 0 0 0">
 			 </a-entity> -->
 		
-		<a-sound src="#1859" autoplay="true" position="5.26 6.2 -0.6" loop="true" volume="0.6" positional="false"></a-sound>
-		<a-sound src="#0904" autoplay="true" position="6.5 6.2 -0.6" loop="true" volume="0.6" positional="false"></a-sound>
-		<a-sound src="#wind" autoplay="true" position="-9.24 2 0" loop="true"  positional="false" volume="0.2"></a-sound>
+		<a-sound src="#1859" autoplay="true" position="5.26 6.2 -0.6" loop="true" volume="0.4" positional="false"></a-sound>
+		<a-sound src="#0904" autoplay="true" position="6.5 6.2 -0.6" loop="true" volume="0.4" positional="false"></a-sound>
+		<a-sound src="#wind" autoplay="true" position="-9.24 2 0" loop="true"  positional="false" volume="0.2" positional="false"></a-sound>
 		<!-- <a-entity tracked-controls="controller: 0; autoHide: false"></a-entity> -->
     </a-scene>
   </body>
