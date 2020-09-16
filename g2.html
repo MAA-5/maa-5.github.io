@@ -18,8 +18,9 @@
 		page: {type: 'string', default: 'p1'}
 	},
     init: function() {
-	  var movep = "descriptions/";
-	  var res = movep.concat(this.data.page);
+	 
+	  var res = "descriptions/"+this.data.page+".html";
+	  ;
 	  
       this.el.addEventListener('click', (e) => {
 		// open new page only if not in VR with HMD
@@ -28,6 +29,19 @@
 		{
 			window.open(res);
 			
+		}
+		else
+		{
+			var pags = document.querySelector("#t"+this.data.page)
+			if(pags.getAttribute('visible')===false)
+			{
+				pags.object3D.visible = true;
+			}
+			else
+			{
+				pags.object3D.visible = false;
+			}
+			console.log(pags);
 		}
       })
     }
@@ -77,67 +91,71 @@
 		<!-- <a-entity gltf-model="#navMesh" nav-mesh></a-entity> -->
 		<a-sky class="not-clickable" src="#sky" rotation="0 100 0" static-body></a-sky>
 		<a-entity class="not-clickable" gltf-model="#navMesh" nav-mesh visible="false" static-body></a-entity>
-		<a-entity class="clickable" gltf-model="#frame1" openpage="page: p1.html" id="p1"
+		<a-entity class="clickable" gltf-model="#frame1" openpage="page: p1" id="p1"
 			 event-set__mouseenter="position: -0.05 0 0"			 
              event-set__mouseleave="position: 0 0 0">
 			 </a-entity>
 		
-		<a-entity class="clickable" gltf-model="#frame2" openpage="page: p2.html" id="p2"
+		<a-entity class="clickable" gltf-model="#frame2" openpage="page: p2" id="p2"
 			 event-set__mouseenter="position: -0.05 0 0"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
-		<a-entity class="clickable" gltf-model="#frame3" openpage="page: p3.html" id="p3"
+		<a-entity class="clickable" gltf-model="#frame3" openpage="page: p3" id="p3"
 			 event-set__mouseenter="position: 0 0 -0.05"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
-		<a-entity class="clickable" gltf-model="#frame4" openpage="page: p4.html" id="p4"
+		<a-entity class="clickable" gltf-model="#frame4" openpage="page: p4" id="p4"
 			 event-set__mouseenter="position: 0 0 -0.05"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
-		<a-entity class="clickable" gltf-model="#frame5" openpage="page: p5.html" id="p5"
+		<a-entity class="clickable" gltf-model="#frame5" openpage="page: p5" id="p5"
 			 event-set__mouseenter="position: 0 0 -0.05"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
-		<a-entity class="clickable" gltf-model="#frame6" openpage="page: p6.html" id="p6"
+		<a-entity class="clickable" gltf-model="#frame6" openpage="page: p6" id="p6"
 			 event-set__mouseenter="position: 0 0 -0.05"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
-		<a-entity class="clickable" gltf-model="#frame7" openpage="page: p7.html" id="p7"
+		<a-entity class="clickable" gltf-model="#frame7" openpage="page: p7" id="p7"
 			 event-set__mouseenter="position: 0 0 0.05"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
-		<a-entity class="clickable" gltf-model="#frame8" openpage="page: p8.html" id="p8"
+		<a-entity class="clickable" gltf-model="#frame8" openpage="page: p8" id="p8"
 			 event-set__mouseenter="position: 0 0 0.05"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
-		<a-entity class="clickable" gltf-model="#frame9" openpage="page: p9.html" id="p9"
+		<a-entity class="clickable" gltf-model="#frame9" openpage="page: p9" id="p9"
 			 event-set__mouseenter="position: 0 0 0.05"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
-		<a-entity class="clickable" gltf-model="#frame10" openpage="page: p10.html" id="p10"
+		<a-entity class="clickable" gltf-model="#frame10" openpage="page: p10" id="p10"
 			 event-set__mouseenter="position: 0 0 0.05"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
-		<a-entity class="clickable" gltf-model="#frame11" openpage="page: p11.html" id="p11"
+		<a-entity class="clickable" gltf-model="#frame11" openpage="page: p11" id="p11"
 			 event-set__mouseenter="position: -0.05 0 0"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
-		<a-entity class="clickable" gltf-model="#frame12" openpage="page: p12.html" id="p12"
+		<a-entity class="clickable" gltf-model="#frame12" openpage="page: p12" id="p12"
 			 event-set__mouseenter="position: 0 0 -0.05"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
-		<a-entity class="clickable" gltf-model="#frame13" openpage="page: p13.html" id="p13"
+		<a-entity class="clickable" gltf-model="#frame13" openpage="page: p13" id="p13"
 			 event-set__mouseenter="position: 0 0 -0.050"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
-		<a-entity class="clickable" gltf-model="#frame14" openpage="page: p14.html" id="p14"
+		<a-entity class="clickable" gltf-model="#frame14" openpage="page: p14" id="p14"
 			 event-set__mouseenter="position: 0 0 0.05"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
-		<a-entity class="clickable" gltf-model="#frame15" openpage="page: p15.html" id="p15"
+		<a-entity class="clickable" gltf-model="#frame15" openpage="page: p15" id="p15"
 			 event-set__mouseenter="position: 0 0 0.05"			 
              event-set__mouseleave="position: 0 0 0">
 		</a-entity>
+		
+		<a-text id="tp1" value="Hikosan Shrine Hohei-den, brilliant vermillion-colored pavilion, a central building of Shinto shrine on Mount Hiko." position="12.28 0.938 -3.464" 
+			rotation="0 -90 0" width="2" color="#000000" visible="false"></a-text>
+			
 		
 		<a-entity id="rig" position="9.9 0 2.4" rotation="0 90 0"	movement-controls="constrainToNavMesh: true; speed: 0.1">
 			<a-camera = "active: true"
@@ -159,12 +177,12 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			<img src="modelstmp/textures/5_stairways-to-Hikosan.jpg" alt="image">
 		</a-entity> -->
-		<a-entity light="type: spot; castShadow: true; angle: 57.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="10.0 2.815 5.323" rotation="-32.0 180 0" static-body></a-entity>
-		<a-entity light="type: spot; castShadow: true; angle: 57.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="1.096 2.82199 5.323" rotation="-32 180 0"  static-body></a-entity>
-		<a-entity light="type: spot; castShadow: true; angle: 57.0; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="1.093 2.82 -4.816" rotation="-32 0 0" static-body></a-entity>
-		<a-entity light="type: spot; castShadow: true; angle: 57.0; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="9.885 2.794 -4.843" rotation="-6 0 0" static-body></a-entity> 
-		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="1.096 2.794 10.0" rotation="-6 0 0" static-body></a-entity>
-		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="0.990 2.794 -9.2" rotation="-6 180 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="10.0 2.865 5.291" rotation="-32.0 180 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="1.105 2.855 5.289" rotation="-32 180 0"  static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="1.093 2.852 -4.766" rotation="-32 0 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="9.857 2.849 -4.795" rotation="-32 0 0" static-body></a-entity> 
+		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="1.09 2.853 9.757" rotation="-32 0 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="0.995 2.86 -9.287" rotation="-32 180 0" static-body></a-entity>
 		<a-entity light="type: ambient; color: #BBB" static-body></a-entity>
 		<a-entity light="type: directional; color: #EEE; intensity: 1.0" position="-1 1 0" static-body></a-entity>
 		
@@ -176,6 +194,8 @@
 		<a-entity gltf-model="#spotlight" position="1.096 2.815 5.24" rotation="0 72 0" static-body></a-entity>
 		<a-entity gltf-model="#spotlight" position="1.096 2.815 -4.726" rotation="0 252 0" static-body></a-entity>
 		<a-entity gltf-model="#spotlight" position="9.87 2.815 -4.737" rotation="0 252 0" static-body></a-entity>
+		<a-entity gltf-model="#spotlight" position="0.99 2.815 -9.321" rotation="0 72 0" static-body></a-entity>
+		<a-entity gltf-model="#spotlight" position="1.096 2.815 9.81" rotation="0 252 0" static-body></a-entity>
 		<a-sound src="#1859" autoplay="true" position="5.26 6.2 -0.6" loop="true" volume="0.4" positional="false"></a-sound>
 		<a-sound src="#0904" autoplay="true" position="6.5 6.2 -0.6" loop="true" volume="0.4" positional="false"></a-sound>
 		<a-sound src="#wind" autoplay="true" position="-9.24 2 0" loop="true"  positional="false" volume="0.2" positional="false"></a-sound>
