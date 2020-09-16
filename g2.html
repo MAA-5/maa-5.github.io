@@ -66,6 +66,7 @@
 			<a-asset-item id="frame13" src="models/frame13.gltf"></a-asset-item>
 			<a-asset-item id="frame14" src="models/frame14.gltf"></a-asset-item>
 			<a-asset-item id="frame15" src="models/frame15.gltf"></a-asset-item>
+			<a-asset-item id="spotlight" src="models/spotlight.gltf"></a-asset-item>
 			<audio id="wind" src="audio/wind.mp3" preload="auto"></audio>
 			<audio id="0904" src="audio/0904.mp3" preload="auto"></audio>
 			<audio id="1859" src="audio/1859.mp3" preload="auto"></audio>
@@ -158,19 +159,23 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			<img src="modelstmp/textures/5_stairways-to-Hikosan.jpg" alt="image">
 		</a-entity> -->
-		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="10.0 2.815 5.24088" rotation="-6.0 180 0" static-body></a-entity>
-		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="1.096 2.82199 5.2174" rotation="-6 180 0"  static-body></a-entity>
-		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="0.990 2.794 -4.726" rotation="-6	0 0" static-body></a-entity>
-		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="9.876 2.794 -4.726" rotation="-6 0 0" static-body></a-entity> 
+		<a-entity light="type: spot; castShadow: true; angle: 57.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="10.0 2.815 5.323" rotation="-32.0 180 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 57.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="1.096 2.82199 5.323" rotation="-32 180 0"  static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 57.0; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="1.093 2.82 -4.816" rotation="-32 0 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 57.0; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="9.885 2.794 -4.843" rotation="-6 0 0" static-body></a-entity> 
 		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="1.096 2.794 10.0" rotation="-6 0 0" static-body></a-entity>
 		<a-entity light="type: spot; castShadow: true; angle: 60.2; intensity: 0.84; penumbra: 0.25; distance: 10" visible="" position="0.990 2.794 -9.2" rotation="-6 180 0" static-body></a-entity>
 		<a-entity light="type: ambient; color: #BBB" static-body></a-entity>
 		<a-entity light="type: directional; color: #EEE; intensity: 1.0" position="-1 1 0" static-body></a-entity>
+		
 		<!-- <a-entity gltf-part="src: #galleryModel; part: Frame6" 
 			 event-set__mouseenter="position: 0 0 0"			 
              event-set__mouseleave="position: 0 0 0">
 			 </a-entity> -->
-		
+		<a-entity gltf-model="#spotlight" position="10 2.815 5.24" rotation="0 72 0" static-body></a-entity>
+		<a-entity gltf-model="#spotlight" position="1.096 2.815 5.24" rotation="0 72 0" static-body></a-entity>
+		<a-entity gltf-model="#spotlight" position="1.096 2.815 -4.726" rotation="0 252 0" static-body></a-entity>
+		<a-entity gltf-model="#spotlight" position="9.87 2.815 -4.737" rotation="0 252 0" static-body></a-entity>
 		<a-sound src="#1859" autoplay="true" position="5.26 6.2 -0.6" loop="true" volume="0.4" positional="false"></a-sound>
 		<a-sound src="#0904" autoplay="true" position="6.5 6.2 -0.6" loop="true" volume="0.4" positional="false"></a-sound>
 		<a-sound src="#wind" autoplay="true" position="-9.24 2 0" loop="true"  positional="false" volume="0.2" positional="false"></a-sound>
