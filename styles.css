@@ -41,14 +41,15 @@ body {
 .info-popover {
   z-index: 1000;
   position: absolute;
-  top: 7%;
+  top: 10%;
   left: 10%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: rgb(255, 253, 249);
-  color: #5a5959;
+  background-color: rgba(255, 253, 249, 0.459);
+  color: #2b2b2b;
   font-weight: bold;
 }
+
 
 #gallery-image {
    width: 90%;
