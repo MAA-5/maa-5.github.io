@@ -6,3 +6,5 @@ preview*.*
 /models/scene.gltf
 /models/tex
 /models/tex/*
+/models/textures
+/models/textures/*
