@@ -893,9 +893,9 @@
             "uri" : "textures/Material_733_baseColor.jpg"
         },
         {
-            "mimeType" : "image/png",
+            "mimeType" : "image/jpeg",
             "name" : "Material_727_normal",
-            "uri" : "textures/Material_727_normal.png"
+            "uri" : "textures/Material_727_normal.jpg"
         },
         {
             "mimeType" : "image/jpeg",
@@ -943,24 +943,24 @@
             "uri" : "textures/elm_leaf_baseColor.png"
         },
         {
-            "mimeType" : "image/png",
+            "mimeType" : "image/jpeg",
             "name" : "Material_732_normal",
-            "uri" : "textures/Material_732_normal.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "Material_732_metallicRoughness",
-            "uri" : "textures/Material_732_metallicRoughness.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "Material_732_baseColor",
-            "uri" : "textures/Material_732_baseColor.png"
+            "uri" : "textures/Material_732_normal.jpg"
         },
         {
             "mimeType" : "image/jpeg",
-            "name" : "Material_723_baseColor",
-            "uri" : "textures/Material_723_baseColor.jpg"
+            "name" : "Material_732_metallicRoughness",
+            "uri" : "textures/Material_732_metallicRoughness.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Material_732_baseColor",
+            "uri" : "textures/Material_732_baseColor.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "Material_723_baseColor-1",
+            "uri" : "textures/Material_723_baseColor-1.jpg"
         },
         {
             "mimeType" : "image/png",
