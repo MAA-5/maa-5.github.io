@@ -1,0 +1,207 @@
+<html>
+  <head>
+	<meta charset="UTF-8">
+    <script src="lib/aframe.min.js"></script>
+	<script src="lib/aframe-extras.min.js"></script>
+	<script src="lib/aframe-gltf-part-component.min.js"></script>
+	<script src="lib/aframe-event-set-component.min.js"></script>
+	<script src="lib/aframe-particle-system-component.min.js"></script>
+	<script src="lib/aframe-htmlembed-component.js"></script> 
+	<script src="lib/aframe-thumb-controls-component.min.js"></script>
+	<script src="lib/draco-decoder.js"></script>
+
+  </head>
+  <title>MAA5</title>
+  <body>
+  <script>
+  AFRAME.registerComponent('openpage', {
+	schema: {
+		page: {type: 'string', default: 'p1'}
+	},
+    init: function() {
+	 
+	  var res = "descriptions/"+this.data.page+".html";
+	  ;
+	  
+      this.el.addEventListener('click', (e) => {
+		// open new page only if not in VR with HMD
+		if(AFRAME.utils.device.checkHeadsetConnected () === false || AFRAME.utils.device.isMobile () === true || 
+		(AFRAME.utils.device.checkHeadsetConnected () === true && !document.querySelector('a-scene').is('vr-mode')))
+		{
+			window.open(res);
+			
+		}
+		else
+		{
+			var pags = document.querySelector("#t"+this.data.page)
+			if(pags.getAttribute('visible')===false)
+			{
+				pags.object3D.visible = true;
+			}
+			else
+			{
+				pags.object3D.visible = false;
+			}
+			console.log(pags);
+		}
+      })
+    }
+  });
+  AFRAME.registerComponent('thumbcontrols',{
+  init: function () {
+    this.el.addEventListener('thumbstickmoved', this.logThumbstick);
+	const cameraEl=document.querySelector('#rig');
+  },
+  logThumbstick: function (evt) {
+	const cameraEl=document.querySelector('#rig');
+    if (evt.detail.y > 0.1) {  }
+    if (evt.detail.y < -0.1) {  }
+    if (evt.detail.x < -0.1) { cameraEl.object3D.rotation.y -= evt.detail.x * 0.01; }
+    if (evt.detail.x > 0.1) { cameraEl.object3D.rotation.y -= evt.detail.x * 0.01; }
+  }
+});
+
+</script>
+    <a-scene loading-screen="dotsColor: red; backgroundColor: blue" renderer="antialias: true; alpha: true; colorManagement: true" 
+		raycaster="objects: .clickable" cursor="rayOrigin:mouse" gltf-model="dracoDecoderPath: lib/;">
+		<a-assets timeout="5000">
+			<a-asset-item id="galleryModel" src="models/scene3.glb"></a-asset-item>
+			<a-asset-item id="navMesh" src="models/navmesh.glb"></a-asset-item>
+			<a-asset-item id="frame1" src="models/frame1.glb"></a-asset-item>
+			<a-asset-item id="frame2" src="models/frame2.glb"></a-asset-item>
+			<a-asset-item id="frame3" src="models/frame3.glb"></a-asset-item>
+			<a-asset-item id="frame4" src="models/frame4.glb"></a-asset-item>
+			<a-asset-item id="frame5" src="models/frame5.glb"></a-asset-item>
+			<a-asset-item id="frame6" src="models/frame6.glb"></a-asset-item>
+			<a-asset-item id="frame7" src="models/frame7.glb"></a-asset-item>
+			<a-asset-item id="frame8" src="models/frame8.glb"></a-asset-item>
+			<a-asset-item id="frame9" src="models/frame9.glb"></a-asset-item>
+			<a-asset-item id="frame10" src="models/frame10.glb"></a-asset-item>
+			<a-asset-item id="frame11" src="models/frame11.glb"></a-asset-item>
+			<a-asset-item id="frame12" src="models/frame12.glb"></a-asset-item>
+			<a-asset-item id="frame13" src="models/frame13.glb"></a-asset-item>
+			<a-asset-item id="frame14" src="models/frame14.glb"></a-asset-item>
+			<a-asset-item id="frame15" src="models/frame15.glb"></a-asset-item>
+			<a-asset-item id="spotlight" src="models/spotlight.glb"></a-asset-item> 
+			<audio id="wind" src="audio/wind.mp3"></audio>
+			<audio id="0904" src="audio/0904.mp3"></audio>
+			<audio id="1859" src="audio/1859.mp3"></audio> 
+			
+			<img id="sky" src="PAN.jpg"> 
+		</a-assets>
+		<a-entity class="not-clickable" gltf-model="#galleryModel" position="0 0 0" static-body shadow="receive: true; cast: true"></a-entity>
+		<!-- <a-entity gltf-model="#navMesh" nav-mesh></a-entity> -->
+		<a-sky class="not-clickable" src="#sky" rotation="0 100 0" static-body></a-sky>
+		<a-entity class="not-clickable" gltf-model="#navMesh" nav-mesh visible="false" static-body></a-entity>
+		<a-entity class="clickable" gltf-model="#frame1" openpage="page: p1" id="p1"
+			 event-set__mouseenter="position: -0.05 0 0"			 
+             event-set__mouseleave="position: 0 0 0">
+			 </a-entity>
+		
+		<a-entity class="clickable" gltf-model="#frame2" openpage="page: p2" id="p2"
+			 event-set__mouseenter="position: -0.05 0 0"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		<a-entity class="clickable" gltf-model="#frame3" openpage="page: p3" id="p3"
+			 event-set__mouseenter="position: 0 0 -0.05"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		<a-entity class="clickable" gltf-model="#frame4" openpage="page: p4" id="p4"
+			 event-set__mouseenter="position: 0 0 -0.05"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		<a-entity class="clickable" gltf-model="#frame5" openpage="page: p5" id="p5"
+			 event-set__mouseenter="position: 0 0 -0.05"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		<a-entity class="clickable" gltf-model="#frame6" openpage="page: p6" id="p6"
+			 event-set__mouseenter="position: 0 0 -0.05"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		<a-entity class="clickable" gltf-model="#frame7" openpage="page: p7" id="p7"
+			 event-set__mouseenter="position: 0 0 0.05"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		<a-entity class="clickable" gltf-model="#frame8" openpage="page: p8" id="p8"
+			 event-set__mouseenter="position: 0 0 0.05"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		<a-entity class="clickable" gltf-model="#frame9" openpage="page: p9" id="p9"
+			 event-set__mouseenter="position: 0 0 0.05"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		<a-entity class="clickable" gltf-model="#frame10" openpage="page: p10" id="p10"
+			 event-set__mouseenter="position: 0 0 0.05"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		<a-entity class="clickable" gltf-model="#frame11" openpage="page: p11" id="p11"
+			 event-set__mouseenter="position: -0.05 0 0"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		<a-entity class="clickable" gltf-model="#frame12" openpage="page: p12" id="p12"
+			 event-set__mouseenter="position: 0 0 -0.05"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		<a-entity class="clickable" gltf-model="#frame13" openpage="page: p13" id="p13"
+			 event-set__mouseenter="position: 0 0 -0.050"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		<a-entity class="clickable" gltf-model="#frame14" openpage="page: p14" id="p14"
+			 event-set__mouseenter="position: 0 0 0.05"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		<a-entity class="clickable" gltf-model="#frame15" openpage="page: p15" id="p15"
+			 event-set__mouseenter="position: 0 0 0.05"			 
+             event-set__mouseleave="position: 0 0 0">
+		</a-entity>
+		
+		<a-text id="tp1" value="Hikosan Shrine Hohei-den, brilliant vermillion-colored pavilion, a central building of Shinto shrine on Mount Hiko." position="12.28 0.938 -3.464" 
+			rotation="0 -90 0" width="2" color="#000000" visible="false"></a-text>
+			
+		
+		<a-entity id="rig" position="9.9 0 2.4" rotation="0 90 0"	movement-controls="constrainToNavMesh: true; speed: 0.1">
+			<a-camera = "active: true"
+				position="0 1.7 0"
+				wasd-controls-enabled="false"
+				
+							>
+			</a-camera>
+			<a-entity laser-controls="hand: right" thumbcontrols></a-entity> 
+			<a-entity oculus-touch-controls="hand: left" ></a-entity> 
+			<!-- <a-entity oculus-touch-controls="hand: left"></a-entity>
+			<a-entity oculus-touch-controls="hand: right"></a-entity> -->
+		</a-entity>
+		
+		<!-- <a-entity position="0 2.25 -15" particle-system="preset: dust"></a-entity> -->
+		<a-entity class="not-clickable" position="5.616 5.51308 0" particle-system="preset: snow; maxAge: 20; positionSpread: 2 2 2; rotationAngle: 3.14; rotationAngleSpread: 1; accelerationValue: 0 0 0; accelerationSpread: 0.06 0 0.06; velocityValue: 0 0.8 0; velocitySpread: 0.2 0.15 0.2; dragValue: 0.32; dragSpread: 0.15; color: #dcdcdc, #101010; size: 0.5; duration: NaN; particleCount: 6; texture: models/textures/leaf.png; randomise: true; opacity: 1; blending: 1"></a-entity>
+		<!-- <a-entity htmlembed position="0 2 -5">
+			<h1>An Example</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<img src="modelstmp/textures/5_stairways-to-Hikosan.jpg" alt="image">
+		</a-entity> -->
+		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="10.0 2.865 5.291" rotation="-32.0 180 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="1.105 2.855 5.289" rotation="-32 180 0"  static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="1.093 2.852 -4.766" rotation="-32 0 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="9.857 2.849 -4.795" rotation="-32 0 0" static-body></a-entity> 
+		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="1.09 2.853 9.757" rotation="-32 0 0" static-body></a-entity>
+		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="0.995 2.86 -9.287" rotation="-32 180 0" static-body></a-entity>
+		<a-entity light="type: ambient; color: #BBB" static-body></a-entity>
+		<a-entity light="type: directional; color: #EEE; intensity: 1.0" position="-1 1 0" static-body></a-entity>
+		
+		<!-- <a-entity gltf-part="src: #galleryModel; part: Frame6" 
+			 event-set__mouseenter="position: 0 0 0"			 
+             event-set__mouseleave="position: 0 0 0">
+			 </a-entity> -->
+		<a-entity gltf-model="#spotlight" position="10 2.815 5.24" rotation="0 72 0" static-body></a-entity>
+		<a-entity gltf-model="#spotlight" position="1.096 2.815 5.24" rotation="0 72 0" static-body></a-entity>
+		<a-entity gltf-model="#spotlight" position="1.096 2.815 -4.726" rotation="0 252 0" static-body></a-entity>
+		<a-entity gltf-model="#spotlight" position="9.87 2.815 -4.737" rotation="0 252 0" static-body></a-entity>
+		<a-entity gltf-model="#spotlight" position="0.99 2.815 -9.321" rotation="0 72 0" static-body></a-entity>
+		<a-entity gltf-model="#spotlight" position="1.096 2.815 9.81" rotation="0 252 0" static-body></a-entity>
+		<a-sound src="#1859" autoplay="true" position="5.26 6.2 -0.6" loop="true" volume="0.4" positional="false"></a-sound>
+		<a-sound src="#0904" autoplay="true" position="6.5 6.2 -0.6" loop="true" volume="0.4" positional="false"></a-sound>
+		<a-sound src="#wind" autoplay="true" position="-9.24 2 0" loop="true"  positional="false" volume="0.2" positional="false"></a-sound>
+		<!-- <a-entity tracked-controls="controller: 0; autoHide: false"></a-entity> -->
+    </a-scene>
+  </body>
+</html>
