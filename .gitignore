@@ -4,3 +4,5 @@ index.old
 preview*.*
 /models/navmesh2.gltf
 /models/scene.gltf
+/models/tex
+/models/tex/*

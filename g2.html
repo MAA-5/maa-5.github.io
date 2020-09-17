@@ -8,6 +8,7 @@
 	<script src="lib/aframe-particle-system-component.min.js"></script>
 	<script src="lib/aframe-htmlembed-component.js"></script> 
 	<script src="lib/aframe-thumb-controls-component.min.js"></script>
+	<script src="lib/draco-decoder.js"></script>
 
   </head>
   <title>MAA5</title>
@@ -61,29 +62,30 @@
 });
 
 </script>
-    <a-scene loading-screen="dotsColor: red; backgroundColor: blue" renderer="antialias: true; alpha: true; colorManagement: true" raycaster="objects: .clickable" cursor="rayOrigin:mouse">
-		<a-assets timeout="10000">
-			<a-asset-item id="galleryModel" src="models/scene2.gltf"></a-asset-item>
-			<a-asset-item id="navMesh" src="models/navmesh.gltf"></a-asset-item>
-			<a-asset-item id="frame1" src="models/frame1.gltf"></a-asset-item>
-			<a-asset-item id="frame2" src="models/frame2.gltf"></a-asset-item>
-			<a-asset-item id="frame3" src="models/frame3.gltf"></a-asset-item>
-			<a-asset-item id="frame4" src="models/frame4.gltf"></a-asset-item>
-			<a-asset-item id="frame5" src="models/frame5.gltf"></a-asset-item>
-			<a-asset-item id="frame6" src="models/frame6.gltf"></a-asset-item>
-			<a-asset-item id="frame7" src="models/frame7.gltf"></a-asset-item>
-			<a-asset-item id="frame8" src="models/frame8.gltf"></a-asset-item>
-			<a-asset-item id="frame9" src="models/frame9.gltf"></a-asset-item>
-			<a-asset-item id="frame10" src="models/frame10.gltf"></a-asset-item>
-			<a-asset-item id="frame11" src="models/frame11.gltf"></a-asset-item>
-			<a-asset-item id="frame12" src="models/frame12.gltf"></a-asset-item>
-			<a-asset-item id="frame13" src="models/frame13.gltf"></a-asset-item>
-			<a-asset-item id="frame14" src="models/frame14.gltf"></a-asset-item>
-			<a-asset-item id="frame15" src="models/frame15.gltf"></a-asset-item>
-			<a-asset-item id="spotlight" src="models/spotlight.gltf"></a-asset-item>
-			<audio id="wind" src="audio/wind.mp3" preload="auto"></audio>
-			<audio id="0904" src="audio/0904.mp3" preload="auto"></audio>
-			<audio id="1859" src="audio/1859.mp3" preload="auto"></audio>
+    <a-scene loading-screen="dotsColor: red; backgroundColor: blue" renderer="antialias: true; alpha: true; colorManagement: true" 
+		raycaster="objects: .clickable" cursor="rayOrigin:mouse" gltf-model="dracoDecoderPath: lib/;">
+		<a-assets timeout="5000">
+			<a-asset-item id="galleryModel" src="models/scene2.glb" preload="auto"></a-asset-item>
+			<a-asset-item id="navMesh" src="models/navmesh.glb"></a-asset-item>
+			<a-asset-item id="frame1" src="models/frame1.glb"></a-asset-item>
+			<a-asset-item id="frame2" src="models/frame2.glb"></a-asset-item>
+			<a-asset-item id="frame3" src="models/frame3.glb"></a-asset-item>
+			<a-asset-item id="frame4" src="models/frame4.glb"></a-asset-item>
+			<a-asset-item id="frame5" src="models/frame5.glb"></a-asset-item>
+			<a-asset-item id="frame6" src="models/frame6.glb"></a-asset-item>
+			<a-asset-item id="frame7" src="models/frame7.glb"></a-asset-item>
+			<a-asset-item id="frame8" src="models/frame8.glb"></a-asset-item>
+			<a-asset-item id="frame9" src="models/frame9.glb"></a-asset-item>
+			<a-asset-item id="frame10" src="models/frame10.glb"></a-asset-item>
+			<a-asset-item id="frame11" src="models/frame11.glb"></a-asset-item>
+			<a-asset-item id="frame12" src="models/frame12.glb"></a-asset-item>
+			<a-asset-item id="frame13" src="models/frame13.glb"></a-asset-item>
+			<a-asset-item id="frame14" src="models/frame14.glb"></a-asset-item>
+			<a-asset-item id="frame15" src="models/frame15.glb"></a-asset-item>
+			<a-asset-item id="spotlight" src="models/spotlight.glb"></a-asset-item>
+		<	<audio id="wind" src="audio/wind.mp3"></audio>
+			<audio id="0904" src="audio/0904.mp3"></audio>
+			<audio id="1859" src="audio/1859.mp3"></audio>
 			
 			<img id="sky" src="PAN.jpg">
 		</a-assets>
@@ -198,7 +200,7 @@
 		<a-entity gltf-model="#spotlight" position="1.096 2.815 9.81" rotation="0 252 0" static-body></a-entity>
 		<a-sound src="#1859" autoplay="true" position="5.26 6.2 -0.6" loop="true" volume="0.4" positional="false"></a-sound>
 		<a-sound src="#0904" autoplay="true" position="6.5 6.2 -0.6" loop="true" volume="0.4" positional="false"></a-sound>
-		<a-sound src="#wind" autoplay="true" position="-9.24 2 0" loop="true"  positional="false" volume="0.2" positional="false"></a-sound>
+		<a-sound src="#wind" autoplay="true" position="-9.24 2 0" loop="true"  positional="false" volume="0.2" positional="false"></a-sound> 
 		<!-- <a-entity tracked-controls="controller: 0; autoHide: false"></a-entity> -->
     </a-scene>
   </body>
