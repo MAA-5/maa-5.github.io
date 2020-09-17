@@ -38,6 +38,12 @@ body {
   padding-bottom: 1.25em;
 }
 
+.info-popover {
+  float: left;
+  z-index: 1000;
+  position:relative;
+}
+
 #gallery-image {
    width: 90%;
    height: auto;
