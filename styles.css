@@ -2,6 +2,8 @@
  * Globals
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
 *, *:after, *:before {
     box-sizing: inherit;
 }
@@ -14,7 +16,7 @@ html {
 a,
 a:focus,
 a:hover {
-  color: #666666;
+  color: #1D5851;
 }
 
 
@@ -24,45 +26,64 @@ a:hover {
 
 body {
   font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
-    font-size: 12px;
-    color: #333333;
+  font-size: 13px;
+  color: #333333;
+  text-shadow: none;
+  box-shadow: none;
 }
 
-.jumbotron {
-  background-color: #eeeeee !important;
+.gallery-wrapper {
+  background-color: #eeeeee;
   padding-top: 1.25em;
   padding-bottom: 1.25em;
 }
 
 #gallery-image {
-  width: 100%;
-  height: auto;
+   width: 90%;
+   height: auto;
+   margin: auto;
 }
 
 .white-text{
-  font-size: 30px;
+  font-size: 20px;
 }
 
-.fluid-container, .small {
-  margin: 20px;
+.fluid-container {
+  margin-left: 8vw;
+  margin-right: 8vw;
   padding: 10px;
 }
 
+p {
+ font-weight: 400;
+ font-size: 13px;
+}
+
+h1 {
+font-weight: 600;
+font-size: 24px;
+}
+
 h2 {
-  color: #0d7d99e7;
-  font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+  color: #267073;
   font-weight: 600;
-  padding-top: 0.5em;
+  font-size: 20px;
 }
 
 h3 {
-  color: #0d7d99e7;
-  font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
-  font-weight: 400;
+  color: #333333;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+h4 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .small{
-  font-size: 1em;
+  font-size: 10px;
 }
 /* 
 * Carousel
@@ -85,15 +106,18 @@ h3 {
 /* 
 * Footer
 */
+ .footer-wrapper {
+   background-color: #eeeeee;
+   margin-top: 30px;
+ }
+ 
+ .footer-team {
+   margin-left: 8vw;
+   margin-right: 8vw;
+   padding: 5px;
+   padding-bottom: 50px;
+   padding-top: 30px;
+ }
 
-.footer-wrapper {
- background-color: #eeeeee;
-}
-
-.footer-team {
-  margin: 20px;
-  padding: 10px;
-  padding-bottom: 50px;
-}
 
 
