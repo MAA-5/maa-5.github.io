@@ -43,8 +43,8 @@ body {
 .info-popover {
   z-index: 1000;
   position: absolute;
-  bottom: 5%;
-  left: 10%;
+  bottom: 1%;
+  left: 8%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
