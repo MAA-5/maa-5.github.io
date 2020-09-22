@@ -7,24 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Adding Bootstrap quicly and free: https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
     <!-- Bootsrap needs this: jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-     crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-     crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="lib/css/mdb.min.css">
     <link href="styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+     <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
  
 
 </head>
@@ -33,9 +31,16 @@
 
     <section class=" gallery-wrapper text-center">
         <img src="images/MAA5-logo_new.svg" alt="MAA5 3d Virtual Gallery Logo" width="300px">
+            <a tabindex="0" class="info-popover btn btn-circle" role="button" data-toggle="popover" data-trigger="focus"
+            data-placement="top" data-html="true" title="Tutorial" data-content="VR mode works optimally with Oculus devices running Firefox or Supermedium browsers.
+            <br>2D mode runs on usual desktop browsers.<br><br>Loading takes a while, please be patient!<br><br>
+            Click and rotate mouse to move the camera. Use keyboard arrows or WASD keys to move inside the room.">i</a>
+        <script>$('.info-popover').popover({
+                trigger: 'focus'})
+        </script>
         <a href="g2.html" target="_blank">
             <div class="view overlay zoom" role="link">
-                <img id="gallery-image" src="images/gallery1_1200.jpg" class="img-fluid gallery-enter"
+                <img id="gallery-image" src="images/gallery1_1200-2.png" class="img-fluid gallery-enter"
                     alt="MAA5 3d Virtual Gallery">
                 <div class="mask flex-center" role="none">
                     <p class="white-text">Enter the Gallery</p>
@@ -51,21 +56,21 @@
             <div class="col-sm exhibition-text">
                 <h1>Travelling in Tagawa</h1>
                 <h2>Photography Exhibition by Anne Virta</h2>
-                   <p>I travelled to Japan with a Finnish Dance theatre group as a photographer in August 2009. 
-                  Tove Jansson's work and Finnish children's culture was introduced in <b><a href="https://faam.city.fukuoka.lg.jp/en/" target="_blank">Fukuoka Asian Art Museum</a></b> and 
+                   <p>I travelled to Japan with a Finnish dance theatre group as a photographer in August 2009. 
+                  Tove Jansson's work and Finnish children's culture were introduced in <b><a href="https://faam.city.fukuoka.lg.jp/en/" target="_blank">Fukuoka Asian Art Museum</a></b> and 
                   the <b><a href="http://dancingmoominvalley.blogspot.com/2009/11/kurkistuksia-tanssivaan-muumilaaksoon.html"
                     target="_blank">“Peeks into the Dancing Moominvalley”</a></b> show for children was part of the festival. We had an honour to stay in 
                   a Japanese family in Tagawa, located near Fukuoka in Kyushu Island. It was magnificent, since travelling to Japan 
                   had been my dream since I was twelve! </p>
 
                  <p><b>Tagawa (Tagawa-shi)</b> is surrounded by mountains, Mount Hiko in the south. One day we climbed up the stairs to 
-                  the prestigious Shinto shrine in the holy Mount Hiko and I was touched by breathtaking scenery of the mountain, the forest 
+                  the prestigious Shinto shrine in the holy Mount Hiko and I was touched by the breathtaking scenery of the mountain, the forest 
                    and the ancient surroundings. For centuries, people have visited the Hikosan Shrine to worship the God of safety in farming and mining. 
                   I want to share these beautiful views and the serene atmosphere with you in this virtual exhibition.<br><br>
                 </p>
                    <!-- COPYRIGHTS -->
-                <p class="small">&copy; 3D Model: VR Game Hub Lobby 4k, Marcin Lubecki. Gallery Landscape Image: Marko O-a. <br>
-                    Photos/Travelling in Tagawa: Anne V.</p>
+                <p class="small">&copy; 3D Model: VR Game Hub Lobby 4k, Marcin Lubecki. Ambient sounds: bigsoundbank.com. <br>
+                    Gallery Landscape Image: Marko. Photos/Travelling in Tagawa: Anne Virta.</p>
 
             </div>
         <!-- Gallery Carousel -->
@@ -91,8 +96,8 @@
                     <li data-target="#carouselFade" data-slide-to="2"></li>
                 </ol>
                 <a class="carousel-control-prev" href="#carouselFade" role="button" data-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="sr-only">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselFade" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -114,28 +119,29 @@
             </div>
             <div class="row">
                 <div class="col-sm-3">
-                        <h3>Anne V.</h3> <p>worked as <i>a Web Designer / 3D Specialist</i> in this project. She created
+                        <h3>Anne</h3> <p>worked as <i>a Web Designer / 3D Specialist</i> in this project. She created
                         the MAA5 logo and the landing page in addition to various other tasks. An outstanding positive
                         personality with a can-do attitude makes her a great team member and easy to work with. <br>
                         <a href="https://www.behance.net/anne-virta" target="_blank">Anne's Behance</a></p>
                 </div>
                 <div class="col-sm-3">
-                        <h3>Anni A.</h3><p>worked as <i>a Web Designer / Web Developer</i> in this project. The visual
+                        <h3>Anni</h3><p>worked as <i>a Web Designer / Web Developer</i> in this project. The visual
                         appearance of the MAA5 landing page is influenced by Anni’s ideas, who also created a carousel
                         (slideshow) on the same page. As a person, Anni is creative and a supportive team player. <br>
                         <a href="https://github.com/A-Aapro" target="_blank">Anni's GitHub</a></p>
                 </div>
                 <div class="col-sm-3">
-                        <h3>Marko O-a.</h3> <p>worked as <i>a VR developer / Technical Specialist</i> in this project.
+                        <h3>Marko</h3> <p>worked as <i>a VR developer / Technical Specialist</i> in this project.
                         Features like implemented interactivity, movement and visual effects, and compatibility with
                         Oculus devices are executed by Marko. A genuine interest in VR and a hands-on attitude make
                         Marko an invaluable project member. <br>
                     <a href="https://github.com/moflac" target="_blank">Marko's GitHub</a></p>
                 </div>
                 <div class="col-sm-3">
-                        <h3>Ville P.</h3> <p>worked as <i>a Project Coordinator</i> in this project. Time management and
+                        <h3>Ville</h3> <p>worked as <i>a Project Coordinator</i> in this project. Time management and
                         communication related tasks were on his responsibility list. By nature, Ville is organised and
-                        he tries to support the other team members and make sure that the project timeline is met. </p>
+                        he tries to support the other team members and make sure that the project timeline is met.  <br>
+                    <a href="https://github.com/vipa-dev" target="_blank">Ville's GitHub</a></p>
                 </div>
             </div>
         </div>
