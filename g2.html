@@ -62,6 +62,29 @@
     if (evt.detail.x > 0.2) { cameraEl.object3D.rotation.y -= evt.detail.x * 0.02; }
   }
 });
+ AFRAME.registerComponent('audiohandler', {
+       init:function() {
+	   
+	   var isPlaying = true; 
+	   var sounds = document.querySelector('[sound]');
+	   this.el.addEventListener('click', (e) => {
+	   if (isPlaying)
+	   {
+			document.querySelector('#sound1').pause();
+			document.querySelector('#sound2').pause();
+			document.querySelector('#sound3').pause();
+			isPlaying = false;
+	   }
+	   else
+	   {
+			document.querySelector('#sound1').play();
+			document.querySelector('#sound2').play();
+			document.querySelector('#sound3').play();
+			isPlaying = true;
+	   }
+	  })}
+      });
+  
 
 </script>
 <script type="text/javascript">
@@ -96,6 +119,7 @@
 			<audio id="1859" src="audio/1859.aac"></audio> 
 			<audio id="click" src="audio/mouse-click2.mp3"></audio>
 			
+			<img id="sound" src="models/textures/sound-100.png">
 			<img id="sky" src="PAN.jpg"> 
 		</a-assets>
 		<a-entity class="not-clickable" gltf-model="#galleryModel" position="0 0 0" static-body shadow="receive: true; cast: true"></a-entity>
@@ -104,7 +128,7 @@
 		<a-entity class="not-clickable" gltf-model="#navMesh" nav-mesh visible="false" static-body></a-entity>
 		
 		
-		<a-entity class="clickable" gltf-model="#frame1" openpage="page: p1" id="p1"
+		<a-entity class="clickable" gltf-model="#frame1" openpage="page: p1" audiohandler id="p1"
 			 animation__mouseenter="property: position; to: -0.05 0 0; dur: 100; startEvents: mouseenter; easing: linear"			 
              animation__mouseleave="property: position; to: 0 0 0; dur: 100; startEvents: mouseleave; easing: linear"
 			 sound="src: #click; on: click; positional: false; volume: 0.1">
@@ -183,6 +207,15 @@
 		<!-- load vr picture descriptions -->
 		<a-entity class="TextDiv"></a-entity> 
 		
+		<a-sound id="sound1" autoplay="true" src="#1859" position="5.26 6.2 -0.6" loop="true" volume="0.4" positional="true"></a-sound>
+		<a-sound id="sound2" autoplay="true" src="#0904" position="6.5 6.2 -0.6" loop="true" volume="0.4" positional="true"></a-sound>
+		<a-sound id="sound3" autoplay="true" src="#wind" position="-9.24 2 0" loop="true" volume="0.2" positional="true"></a-sound> 
+		
+		<a-entity audiohandler class="clickable" geometry="primitive: box" position="4.31862 1.553 7.47967" id="soundswitch" scale="0.06 0.1 0.1" material="shader: flat; vertexColors: face; blending: multiply; src: #sound; width: 499"
+			animation__click="property: position; to: 4.30862 1.553 7.47967; dur: 100; startEvents: click; easing: easeInOutQuad; loop: 1; dir: alternate">
+					 
+            
+		</a-entity>
 		
 		<a-entity id="rig" position="9.9 0 2.4" rotation="0 90 0"	movement-controls="constrainToNavMesh: true; speed: 0.1">
 			<a-camera
@@ -223,9 +256,8 @@
 		<a-entity gltf-model="#spotlight" position="9.87 2.815 -4.737" rotation="0 252 0" static-body></a-entity>
 		<a-entity gltf-model="#spotlight" position="0.99 2.815 -9.321" rotation="0 72 0" static-body></a-entity>
 		<a-entity gltf-model="#spotlight" position="1.096 2.815 9.81" rotation="0 252 0" static-body></a-entity>
-		<a-sound src="#1859" autoplay="true" position="5.26 6.2 -0.6" loop="true" volume="0.4" positional="true"></a-sound>
-		<a-sound src="#0904" autoplay="true" position="6.5 6.2 -0.6" loop="true" volume="0.4" positional="true"></a-sound>
-		<a-sound src="#wind" autoplay="true" position="-9.24 2 0" loop="true" volume="0.2" positional="true"></a-sound> 
+		
+		
 		<!-- <a-entity tracked-controls="controller: 0; autoHide: false"></a-entity> -->
     </a-scene>
 	
