@@ -10,3 +10,5 @@ preview*.*
 /models/textures
 /models/textures/*
 logoless.html
+*.gltf
+*.bin
