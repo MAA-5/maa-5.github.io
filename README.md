@@ -1,2 +1,2 @@
 # maa-5.github.io
-# Tämä projekti on Tampereen Yliopiston järjestämän Modernit ohjelmistoteknologiat -täydennyskoulutuksen näytetyö.
+# This project is a demonstration of the Modern Software Technologies training organized by the University of Tampere.
