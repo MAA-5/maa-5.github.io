@@ -11,8 +11,7 @@
 	<script src="lib/jquery-3.5.1.min.js"></script>
 	<script src="lib/ccomp.js"></script>
 	<link rel="stylesheet" type="text/css" href="loadingsc.css">
-	<!-- <link rel="import" href="descriptions/vrdescriptions.html"> -->
-
+	
   </head>
   <title>MAA5</title>
   <body>
@@ -134,7 +133,6 @@
 			<img id="sky" src="PAN.jpg"> 
 		</a-assets>
 		<a-entity class="not-clickable" gltf-model="#galleryModel" position="0 0 0" static-body shadow="receive: true; cast: true"></a-entity>
-		<!-- <a-entity gltf-model="#navMesh" nav-mesh></a-entity> -->
 		<a-sky class="not-clickable" src="#sky" rotation="0 100 0" static-body></a-sky>
 		<a-entity class="not-clickable" gltf-model="#navMesh" nav-mesh visible="false" static-body></a-entity>
 		
@@ -244,11 +242,7 @@
 		
 		<!-- <a-entity position="0 2.25 -15" particle-system="preset: dust"></a-entity> -->
 		<a-entity class="not-clickable" position="5.616 5.51308 0" particle-system="preset: snow; maxAge: 20; positionSpread: 2 2 2; rotationAngle: 3.14; rotationAngleSpread: 1; accelerationValue: 0 0 0; accelerationSpread: 0.06 0 0.06; velocityValue: 0 0.8 0; velocitySpread: 0.2 0.15 0.2; dragValue: 0.32; dragSpread: 0.15; color: #dcdcdc, #101010; size: 0.5; duration: NaN; particleCount: 6; texture: models/textures/leaf.png; randomise: true; opacity: 1; blending: 1"></a-entity>
-		<!-- <a-entity htmlembed position="0 2 -5">
-			<h1>An Example</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<img src="modelstmp/textures/5_stairways-to-Hikosan.jpg" alt="image">
-		</a-entity> -->
+		
 		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="10.0 2.865 5.291" rotation="-32.0 180 0" static-body></a-entity>
 		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="1.105 2.855 5.289" rotation="-32 180 0"  static-body></a-entity>
 		<a-entity light="type: spot; castShadow: true; angle: 50; intensity: 0.84; penumbra: 0.15; distance: 10" visible="" position="1.093 2.852 -4.766" rotation="-32 0 0" static-body></a-entity>
@@ -258,10 +252,7 @@
 		<a-entity light="type: ambient; color: #BBB" static-body></a-entity>
 		<a-entity light="type: directional; color: #EEE; intensity: 1.0" position="-1 1 0" static-body ></a-entity>
 		
-		<!-- <a-entity gltf-part="src: #galleryModel; part: Frame6" 
-			 event-set__mouseenter="position: 0 0 0"			 
-             event-set__mouseleave="position: 0 0 0">
-			 </a-entity> -->
+		
 		<a-entity gltf-model="#spotlight" position="10 2.815 5.24" rotation="0 72 0" static-body></a-entity>
 		<a-entity gltf-model="#spotlight" position="1.096 2.815 5.24" rotation="0 72 0" static-body></a-entity>
 		<a-entity gltf-model="#spotlight" position="1.096 2.815 -4.726" rotation="0 252 0" static-body></a-entity>
@@ -270,8 +261,7 @@
 		<a-entity gltf-model="#spotlight" position="1.096 2.815 9.81" rotation="0 252 0" static-body></a-entity>
 		
 		
-		<!-- <a-entity tracked-controls="controller: 0; autoHide: false"></a-entity> -->
-    </a-scene>
+		</a-scene>
 	
   </body>
 </html>
