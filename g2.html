@@ -8,13 +8,24 @@
 	<script src="lib/aframe-particle-system-component.min.js"></script>
 	<script src="lib/aframe-htmlembed-component.js"></script> 
 	<script src="lib/aframe-thumb-controls-component.min.js"></script>
-	<script src="lib/draco-decoder.js"></script>
+	<!-- <script src="/lib/draco-decoder.js"></script> -->
 	<script src="lib/jquery-3.5.1.min.js"></script>
-	<link rel="import" href="descriptions/vrdescriptions.html">
+	<script src="lib/ccomp.js"></script>
+	<link rel="stylesheet" type="text/css" href="loadingsc.css">
+	<!-- <link rel="import" href="descriptions/vrdescriptions.html"> -->
 
   </head>
   <title>MAA5</title>
   <body>
+	<div id="splash">
+		<div>
+			
+			<div class="logo"><img src="images/MAA5-logo_new.png"></div>
+			
+			<div class="loading"></div>
+		</div>
+		<div class="start-button">Start</div>
+	</div>
   <script>
   AFRAME.registerComponent('openpage', {
 	schema: {
@@ -93,9 +104,9 @@
 		});
 </script>
 
-    <a-scene loading-screen="dotsColor: red; backgroundColor: blue" renderer="antialias: true; alpha: true; colorManagement: true" 
+<a-scene renderer="antialias: true; alpha: true; colorManagement: true" 
 		raycaster="objects: .clickable" cursor="rayOrigin:mouse" gltf-model="dracoDecoderPath: lib/;">
-		<a-assets timeout="5000">
+		<a-assets>
 			<a-asset-item id="galleryModel" src="models/scene2.glb"></a-asset-item>
 			<a-asset-item id="navMesh" src="models/navmesh.glb"></a-asset-item>
 			<a-asset-item id="frame1" src="models/frame1.glb"></a-asset-item>
@@ -124,7 +135,7 @@
 		</a-assets>
 		<a-entity class="not-clickable" gltf-model="#galleryModel" position="0 0 0" static-body shadow="receive: true; cast: true"></a-entity>
 		<!-- <a-entity gltf-model="#navMesh" nav-mesh></a-entity> -->
-		<!-- <a-sky class="not-clickable" src="#sky" rotation="0 100 0" static-body></a-sky> -->
+		<a-sky class="not-clickable" src="#sky" rotation="0 100 0" static-body></a-sky>
 		<a-entity class="not-clickable" gltf-model="#navMesh" nav-mesh visible="false" static-body></a-entity>
 		
 		
