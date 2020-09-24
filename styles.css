@@ -74,6 +74,7 @@ body {
 
 .white-text{
   font-size: 20px;
+  cursor: pointer;
 }
 
 .fluid-container {
@@ -146,6 +147,18 @@ h4 {
    padding-bottom: 50px;
    padding-top: 30px;
  }
+
+@media only screen and (max-width: 600px) {
+
+  .info-popover {
+    z-index: 1000;
+    position: absolute;
+    bottom: 1%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
 
 
 
