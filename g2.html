@@ -9,6 +9,7 @@
 	<script src="lib/aframe-htmlembed-component.js"></script> 
 	<script src="lib/aframe-thumb-controls-component.min.js"></script>
 	<script src="lib/jquery-3.5.1.min.js"></script>
+	<script src="https://unpkg.com/super-hands@3.0.0/dist/super-hands.min.js"></script>
 	<script src="lib/ccomp.js"></script>
 	<link rel="stylesheet" type="text/css" href="loadingsc.css">
 	
@@ -138,6 +139,7 @@
 		
 		
 		<a-entity class="clickable" gltf-model="#frame1" openpage="page: p1" id="p1"
+			hoverable grabbable stretchable draggable dropppable
 			 animation__mouseenter="property: position; to: -0.05 0 0; dur: 100; startEvents: mouseenter; easing: linear"			 
              animation__mouseleave="property: position; to: 0 0 0; dur: 100; startEvents: mouseleave; easing: linear"
 			 sound="src: #click; on: click; positional: false; volume: 0.1">
@@ -234,10 +236,12 @@
 				fov="55"
 							>
 			</a-camera>
-			<a-entity laser-controls="hand: right" thumbcontrols></a-entity> 
-			<a-entity oculus-touch-controls="hand: left" ></a-entity> 
+			<!--<a-entity laser-controls="hand: right" thumbcontrols></a-entity> 
+			<a-entity oculus-touch-controls="hand: left" ></a-entity> -->
 			<!-- <a-entity oculus-touch-controls="hand: left"></a-entity>
 			<a-entity oculus-touch-controls="hand: right"></a-entity> -->
+			<a-entity sphere-collider="objects: a-box" super-hands hand-controls="left"></a-entity>
+			<a-entity sphere-collider="objects: a-box" super-hands hand-controls="right"></a-entity>
 		</a-entity>
 		
 		<!-- <a-entity position="0 2.25 -15" particle-system="preset: dust"></a-entity> -->
