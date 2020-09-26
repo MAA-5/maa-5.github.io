@@ -66,8 +66,8 @@
   },
   logThumbstick: function (evt) {
 	const cameraEl=document.querySelector('#rig');
-    if (evt.detail.y > 0.1) { cameraEl.object3D.position.y -= evt.detail.x * 0.02; }
-    if (evt.detail.y < -0.1) { cameraEl.object3D.position.y -= evt.detail.x * 0.02; }
+    if (evt.detail.z > 0.1) { cameraEl.object3D.position.z -= evt.detail.z * 0.02; }
+    if (evt.detail.z < -0.1) { cameraEl.object3D.position.z -= evt.detail.z * 0.02; }
     if (evt.detail.x < -0.2) { cameraEl.object3D.rotation.y -= evt.detail.x * 0.02; }
     if (evt.detail.x > 0.2) { cameraEl.object3D.rotation.y -= evt.detail.x * 0.02; }
   }
