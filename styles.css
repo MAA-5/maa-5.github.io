@@ -134,20 +134,8 @@ h4 {
   color: #ffffff;
 }
 
-/* 
-* Footer
-*/
- .footer-wrapper {
-   background-color: #dcd4cf;
-   color: #ffffff;
-   padding-left: 5vw;
-   padding-right: 5vw;
-   padding-top: 70px;
-   padding-bottom: 30px;
-}
-
 /*
- *Social Media
+ * Social Media
  */
 
 .icons {
@@ -160,9 +148,23 @@ h4 {
     padding-right: 20px;
     float: left;
 }
+
 .social-media {
     display: flex;
     align-items: center;
+}
+
+/* 
+ * Footer
+ */
+
+.footer-wrapper {
+    background-color: rgb(94, 92, 92);
+    color: #ffffff;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 70px;
+    padding-bottom: 30px;
 }
      
 @media only screen and (max-width: 600px) {
