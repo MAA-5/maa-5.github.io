@@ -137,17 +137,29 @@ h4 {
 */
  .footer-wrapper {
    background-color: #dcd4cf;
-   margin-top: 30px;
- }
- 
- .footer-team {
-   margin-left: 8vw;
-   margin-right: 8vw;
-   padding: 5px;
-   padding-bottom: 50px;
-   padding-top: 30px;
- }
+   color: #ffffff;
+   padding-left: 5vw;
+   padding-right: 5vw;
+   padding-top: 70px;
+   padding-bottom: 30px;
+/*
+ *Social Media
+ */
 
+.icons {
+    width: 40px;
+}
+
+.hidden-text {
+    display: block;
+    font-size: 0px;
+    padding-right: 20px;
+    float: left;
+}
+.social-media {
+    display: flex;
+    align-items: center;
+}
 @media only screen and (max-width: 600px) {
 
   .info-popover {
