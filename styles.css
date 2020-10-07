@@ -149,11 +149,11 @@ h4 {
  */
 
 .footer-wrapper {
-    background-color: rgb(83, 83, 83);
-    color: #ffffff;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 70px;
+    background-color:   rgb(129, 122, 122);
+    color: white;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-top: 60px;
     padding-bottom: 30px;
 }
 
