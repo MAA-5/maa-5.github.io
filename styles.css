@@ -116,6 +116,15 @@ h4 {
 .small{
   font-size: 10px;
 }
+
+.share-buttons {
+    display: flex;
+}
+
+.share {
+    margin-right: 10px;
+}
+
 /* 
 * Carousel
 */
