@@ -144,26 +144,6 @@ h4 {
   color: #ffffff;
 }
 
-/*
- * Social Media
- */
-
-.icons {
-    width: 32px;
-}
-
-.hidden-text {
-    display: block;
-    font-size: 0px;
-    padding-right: 20px;
-    float: left;
-}
-
-.social-media {
-    display: flex;
-    align-items: center;
-}
-
 /* 
  * Footer
  */
