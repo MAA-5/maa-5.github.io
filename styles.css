@@ -119,6 +119,7 @@ h4 {
 
 .share-buttons {
     display: flex;
+    margin-bottom: 3vw;
 }
 
 .share {
